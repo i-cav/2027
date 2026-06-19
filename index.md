@@ -23,7 +23,6 @@ cover-img: "/assets/img/kit-royal-tropical-institute.jpg"
       <span class="important-dates__label">Workshop proposal deadline</span>
       <span class="important-dates__value">
         <span class="important-dates__date">Tuesday, 15 September 2026</span>
-        <span class="important-dates__note">Call coming up soon</span>
       </span>
     </a>
     <a class="important-dates__item topic-authors" href="{{ '/cfp/' | relative_url }}">
