@@ -30,7 +30,8 @@ Parking in inner Amsterdam is limited and can be expensive compared with public 
 
 KIT is beside Oosterpark. The surrounding area includes parks, museums, cafes, and restaurants within walking distance.
 
-<nav class="quick-links" aria-label="Venue links">
+<nav class="quick-links" aria-label="Venue and attendee links">
+  <a class="button-link" href="{{ "/hotels/" | relative_url }}">Hotels</a>
   <a class="button-link" href="{{ "/amsterdam/" | relative_url }}">Amsterdam</a>
   <a class="button-link" href="{{ site.data.conference.venue.official_url }}">KIT Conferences and Events</a>
   <a class="button-link" href="{{ site.data.conference.venue.wikipedia_url }}">Wikipedia</a>

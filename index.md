@@ -72,6 +72,7 @@ cover-img: "/assets/img/kit-royal-tropical-institute.jpg"
       <h3 id="quick-links-attend">Attend</h3>
       <div class="quick-links">
         <a class="button-link" href="{{ '/registration/' | relative_url }}">Registration</a>
+        <a class="button-link" href="{{ '/hotels/' | relative_url }}">Hotels</a>
         <a class="button-link" href="{{ '/venue/' | relative_url }}">Venue</a>
         <a class="button-link" href="{{ '/amsterdam/' | relative_url }}">Amsterdam</a>
       </div>

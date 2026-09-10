@@ -36,12 +36,13 @@ Beyond its famous attractions, Amsterdam offers vibrant street markets, cozy can
 
 ## Visitor resources
 
-<nav class="quick-links" aria-label="Official Amsterdam visitor links">
+<nav class="quick-links" aria-label="Amsterdam visitor and conference links">
+  <a class="button-link" href="{{ "/hotels/" | relative_url }}">CAV 2027 Hotels</a>
   <a class="button-link" href="{{ "/venue/" | relative_url }}">Venue</a>
   <a class="button-link" href="https://www.iamsterdam.com/en/">Official Amsterdam Guide</a>
   <a class="button-link" href="https://www.gvb.nl/tourist-english">GVB Visitor Information</a>
   <a class="button-link" href="https://www.iamsterdam.com/en/see-and-do">See and Do</a>
   <a class="button-link" href="https://www.iamsterdam.com/en/see-and-do/top-20-things-to-do-in-amsterdam">Top Things to Do</a>
-  <a class="button-link" href="https://www.iamsterdam.com/en/travel-stay">Travel and Stay</a>
+  <a class="button-link" href="https://www.iamsterdam.com/en/travel-stay">I amsterdam Travel and Stay</a>
   <a class="button-link" href="https://www.iamsterdam.com/en/see-and-do/museums-and-galleries">Museums and Galleries</a>
 </nav>

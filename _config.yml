@@ -21,6 +21,7 @@ navbar-links:
     - CAV Award: "/award/"
   Attend:
     - Registration: "/registration/"
+    - Hotels: "/hotels/"
     - Venue: "/venue/"
     - Amsterdam: "/amsterdam/"
     - Sponsors: "/sponsors/"
