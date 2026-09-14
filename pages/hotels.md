@@ -8,16 +8,20 @@ cover-img: "/assets/img/hero/amsterdam-canal.jpg"
 ---
 
 <div class="lead-copy">
-  <p>RAI Hotel Services provides the hotel booking service for CAV 2027 and has arranged room blocks for attendees in Amsterdam.</p>
-  <p>CAV 2027 itself will take place at <a href="{{ site.data.conference.venue.official_url }}">{{ site.data.conference.venue.name }}</a>, formerly the {{ site.data.conference.venue.former_name }}; it is not being held at RAI Amsterdam.</p>
+  <p>CAV 2027 takes place at <a href="{{ site.data.conference.venue.official_url }}">{{ site.data.conference.venue.name }}</a>, formerly the {{ site.data.conference.venue.former_name }}, beside Oosterpark in Amsterdam.</p>
+  <p>Our dedicated hotel partner, RAI Hotel Services, has secured room blocks with event rates for CAV 2027 attendees at a range of hotels in and around Amsterdam.</p>
 </div>
 
-Use the CAV 2027 hotel booking portal to compare the currently available accommodation options.
+Use the official CAV 2027 hotel booking portal to compare available hotels and room options.
 
-<nav class="quick-links quick-links--pair" aria-label="CAV 2027 hotel booking">
-  <a class="button-link button-primary" href="https://hotelmap.com/MDWNJ">View and book CAV 2027 hotels</a>
+<div class="hotel-booking">
+  <a class="button-link button-primary hotel-booking__button" href="https://hotelmap.com/MDWNJ?utm_source=CAV27_webORG&amp;utm_medium=CAV27_webORG&amp;utm_campaign=CAV27_webORG&amp;utm_id=CAV27_webORG">View and book CAV 2027 hotels</a>
+  <p class="hotel-booking__note">Rates and availability may change, and booking and cancellation terms vary by hotel. Review the current details before reserving.</p>
+</div>
+
+<nav class="page-related-links" aria-label="Related pages">
+  <span>See also:</span>
+  <a href="{{ '/venue/' | relative_url }}">Venue</a>
+  <span aria-hidden="true">&middot;</span>
+  <a href="{{ '/amsterdam/' | relative_url }}">Amsterdam</a>
 </nav>
-
-## Booking information
-
-Bookings are completed through HotelMap. Availability and prices may change, and room conditions and cancellation terms vary by hotel. Review the current details in the booking portal before completing a reservation.

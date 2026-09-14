@@ -296,6 +296,43 @@ a.btn-primary:focus {
   font-weight: 800;
 }
 
+.hotel-booking {
+  max-width: 36rem;
+  margin: var(--space-5) 0 var(--space-7);
+}
+
+.hotel-booking__button {
+  width: 100%;
+}
+
+.hotel-booking__note {
+  margin: var(--space-3) 0 0;
+  color: var(--muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+}
+
+.page-related-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-1) var(--space-2);
+  margin-top: var(--space-7);
+  color: var(--muted);
+  font-family: var(--header-font);
+  font-size: var(--font-size-sm);
+  line-height: 1.4;
+}
+
+.page-related-links span:first-child {
+  font-weight: 700;
+}
+
+.page-related-links a {
+  color: var(--brand-link);
+  font-weight: 800;
+}
+
 .callout {
   margin: var(--space-7) 0;
   padding: var(--space-4) var(--space-5);
