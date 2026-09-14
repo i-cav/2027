@@ -20,8 +20,9 @@ Use the official CAV 2027 hotel booking portal to compare available hotels and r
 </div>
 
 <nav class="page-related-links" aria-label="Related pages">
-  <span>See also:</span>
-  <a href="{{ '/venue/' | relative_url }}">Venue</a>
-  <span aria-hidden="true">&middot;</span>
-  <a href="{{ '/amsterdam/' | relative_url }}">Amsterdam</a>
+  <span class="page-related-links__label">See also:</span>
+  <ul class="page-related-links__list" role="list">
+    <li class="page-related-links__item"><a href="{{ '/venue/' | relative_url }}">Venue</a></li>
+    <li class="page-related-links__item"><a href="{{ '/amsterdam/' | relative_url }}">Amsterdam</a></li>
+  </ul>
 </nav>

@@ -42,9 +42,10 @@ All deadlines are AoE (Anywhere on Earth).
   </tbody>
 </table>
 
-## Related Calls
-
-<nav class="quick-links quick-links--pair" aria-label="Related calls">
-  <a class="button-link" href="{{ '/cfw/' | relative_url }}">Call for Workshops</a>
-  <a class="button-link" href="{{ '/artifacts/' | relative_url }}">Artifact Evaluation</a>
+<nav class="page-related-links" aria-label="Related calls">
+  <span class="page-related-links__label">See also:</span>
+  <ul class="page-related-links__list" role="list">
+    <li class="page-related-links__item"><a href="{{ '/cfw/' | relative_url }}">Call for Workshops</a></li>
+    <li class="page-related-links__item"><a href="{{ '/artifacts/' | relative_url }}">Artifact Evaluation</a></li>
+  </ul>
 </nav>

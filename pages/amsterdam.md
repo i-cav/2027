@@ -34,15 +34,16 @@ One of the city's most moving historical landmarks is the [Anne Frank House](htt
 
 Beyond its famous attractions, Amsterdam offers vibrant street markets, cozy canal cruises, diverse international cuisine, and an atmosphere that feels both relaxed and culturally rich.
 
-## Visitor resources
-
-<nav class="quick-links" aria-label="Amsterdam visitor and conference links">
-  <a class="button-link" href="{{ "/hotels/" | relative_url }}">CAV 2027 Hotels</a>
-  <a class="button-link" href="{{ "/venue/" | relative_url }}">Venue</a>
-  <a class="button-link" href="https://www.iamsterdam.com/en/">Official Amsterdam Guide</a>
-  <a class="button-link" href="https://www.gvb.nl/tourist-english">GVB Visitor Information</a>
-  <a class="button-link" href="https://www.iamsterdam.com/en/see-and-do">See and Do</a>
-  <a class="button-link" href="https://www.iamsterdam.com/en/see-and-do/top-20-things-to-do-in-amsterdam">Top Things to Do</a>
-  <a class="button-link" href="https://www.iamsterdam.com/en/travel-stay">I amsterdam Travel and Stay</a>
-  <a class="button-link" href="https://www.iamsterdam.com/en/see-and-do/museums-and-galleries">Museums and Galleries</a>
+<nav class="page-related-links" aria-label="Amsterdam visitor and conference links">
+  <span class="page-related-links__label">See also:</span>
+  <ul class="page-related-links__list" role="list">
+    <li class="page-related-links__item"><a href="{{ "/hotels/" | relative_url }}">CAV 2027 Hotels</a></li>
+    <li class="page-related-links__item"><a href="{{ "/venue/" | relative_url }}">Venue</a></li>
+    <li class="page-related-links__item"><a href="https://www.iamsterdam.com/en/">Official Amsterdam Guide</a></li>
+    <li class="page-related-links__item"><a href="https://www.gvb.nl/tourist-english">GVB Visitor Information</a></li>
+    <li class="page-related-links__item"><a href="https://www.iamsterdam.com/en/see-and-do">See and Do</a></li>
+    <li class="page-related-links__item"><a href="https://www.iamsterdam.com/en/see-and-do/top-20-things-to-do-in-amsterdam">Top Things to Do</a></li>
+    <li class="page-related-links__item"><a href="https://www.iamsterdam.com/en/travel-stay">I amsterdam Travel and Stay</a></li>
+    <li class="page-related-links__item"><a href="https://www.iamsterdam.com/en/see-and-do/museums-and-galleries">Museums and Galleries</a></li>
+  </ul>
 </nav>

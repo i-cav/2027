@@ -320,17 +320,51 @@ a.btn-primary:focus {
   margin-top: var(--space-7);
   color: var(--muted);
   font-family: var(--header-font);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-ui);
   line-height: 1.4;
 }
 
-.page-related-links span:first-child {
+.page-related-links__label {
+  flex: 0 0 auto;
   font-weight: 700;
+}
+
+.page-related-links__list {
+  min-width: 0;
+  flex: 1 1 16rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1) var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-related-links__item {
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0;
+}
+
+.page-related-links__item + .page-related-links__item::before {
+  content: "";
+  width: 0.2rem;
+  height: 0.2rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--rule-strong);
 }
 
 .page-related-links a {
   color: var(--brand-link);
   font-weight: 800;
+}
+
+.program-overview .page-related-links {
+  margin-top: var(--space-5);
 }
 
 .callout {
