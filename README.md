@@ -36,6 +36,8 @@ Organizer roles and chair links live in `_data/organizers.yml`; the organization
 
 Public conference pages live under `pages/` and use explicit permalinks so URLs such as `/cfp/`, `/organization/`, `/contact/`, and `/sponsors/` remain stable.
 
+The footer's page-specific update date comes from the latest Git commit that changed the page source. A `last_modified_at` value in a page's front matter can override the generated date when necessary.
+
 ## Image credits
 
 `assets/img/kit-royal-tropical-institute.jpg` is a public-domain venue photo by Kmhofmann, sourced from Wikimedia Commons: <https://commons.wikimedia.org/wiki/File:Tropenmuseum_front.jpg>.

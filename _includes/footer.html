@@ -2,22 +2,35 @@
   <div class="container-md">
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-        {% include social-networks-links.html %}
-        <p class="copyright">
-          {% if site.author %}{{ site.author }}&nbsp;&bull;&nbsp;{% endif %}
-          {% if site.data.conference.year %}{{ site.data.conference.year }}{% else %}{{ site.time | date: '%Y' }}{% endif %}
-        </p>
-        <p class="copyright">
-          <a href="{{ '/organization/' | relative_url }}">Organization</a>
-          &nbsp;&bull;&nbsp;
-          <a href="{{ '/contact/' | relative_url }}">Contact</a>
-          &nbsp;&bull;&nbsp;
-          <a href="{{ '/contact/' | relative_url }}">Legal Notice</a>
-        </p>
+        <div class="footer-signature">
+          <a class="footer-signature__logo" href="{{ '/' | relative_url }}" aria-label="CAV 2027 home">
+            <img src="{{ site.data.conference.logo | relative_url }}" alt="" width="389" height="387" loading="lazy" decoding="async">
+          </a>
+          <div class="footer-signature__content">
+            <p class="footer-signature__name">{{ site.data.conference.full_name }}</p>
+            <p class="footer-signature__details">
+              <span>{{ site.data.conference.dates.conference | replace: '-', '&ndash;' }}</span>
+              <span>{{ site.data.conference.venue.city }}, {{ site.data.conference.venue.country }} &middot; {{ site.data.conference.venue.name }}</span>
+            </p>
+
+            {% include social-networks-links.html %}
+
+            <nav class="footer-navigation" aria-label="Footer navigation">
+              <a href="{{ '/organization/' | relative_url }}">Organization</a>
+              <a href="{{ '/contact/' | relative_url }}">Contact</a>
+              <a href="{{ '/contact/' | relative_url }}">Legal Notice</a>
+            </nav>
+          </div>
+        </div>
+
         {% if site.edit_page_button and site.github.repository_url and page.path %}
-        <p class="copyright">
-          <a title="Edit this page on GitHub" href="{{ site.github.repository_url }}/edit/{{ site.github.source.branch | default: 'main' }}/{{ page.path }}">Edit this page</a>
-        </p>
+        <div class="footer-page-tools">
+          <span class="footer-page-tools__item">Current page:{% if page.title %} <strong>{{ page.title | strip_html }}</strong>{% endif %}</span>
+          {% if page.last_modified_at %}
+          <span class="footer-page-tools__item footer-page-tools__updated"><span class="footer-page-tools__separator" aria-hidden="true">&middot;</span>Updated <time datetime="{{ page.last_modified_at | date: '%Y-%m-%d' }}">{{ page.last_modified_at | date: '%-d %b %Y' }}</time></span>
+          {% endif %}
+          <span class="footer-page-tools__item"><span class="footer-page-tools__separator" aria-hidden="true">&middot;</span><a href="{{ site.github.repository_url }}/edit/{{ site.github.source.branch | default: 'main' }}/{{ page.path }}">Edit this page on GitHub</a></span>
+        </div>
         {% endif %}
       </div>
     </div>

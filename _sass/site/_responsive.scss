@@ -3,13 +3,29 @@
    ========================================================================== */
 
 @media (min-width: 768px) {
-  footer {
-    padding: var(--space-9) 0;
+  .footer-signature {
+    grid-template-columns: 6rem minmax(0, 1fr);
+    align-items: center;
+    justify-items: stretch;
+    gap: var(--space-5);
   }
 
-  footer .footer-links,
-  footer .copyright {
-    font-size: var(--font-size-base);
+  .footer-signature__logo {
+    width: 6rem;
+    padding: 0.25rem;
+  }
+
+  footer .footer-signature__content .footer-links,
+  .footer-navigation {
+    justify-content: flex-start;
+  }
+
+  .footer-page-tools {
+    justify-content: flex-start;
+  }
+
+  .footer-page-tools__separator {
+    display: inline-block;
   }
 }
 
