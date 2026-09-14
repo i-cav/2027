@@ -16,7 +16,7 @@ common-head-js:
 <!-- CAV 2027 Jekyll site, adapted from Beautiful Jekyll layouts -->
 {% include head.html %}
 
-<body>
+<body{% if page.url == '/' %} class="home-page"{% endif %}>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   {% include nav.html %}

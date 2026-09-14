@@ -7,26 +7,30 @@
 {% assign hero_days = hero_date_tokens[1] %}
 <div class="intro-header home-hero{% if page.cover-img %} home-hero--with-media{% endif %}">
   <div class="home-hero__card">
-    <div class="home-hero__content">
-      <h1>{% if page.title %}{{ page.title | strip_html }}{% else %}{{ site.data.conference.name }}{% endif %}</h1>
-      {% if page.subtitle %}
-        <p class="home-hero__subtitle">{{ page.subtitle | strip_html | replace: ' on Computer-Aided Verification', ' on<br>Computer-Aided Verification' }}</p>
+    <div class="home-hero__content{% if site.data.conference.logo %} home-hero__content--with-logo{% endif %}">
+      {% if site.data.conference.logo %}
+        <div class="home-hero__logo">
+          <img src="{{ site.data.conference.logo | relative_url }}" alt="{{ site.data.conference.name | escape }}" width="389" height="387" decoding="async">
+        </div>
       {% endif %}
-      <p class="home-hero__copy">The flagship conference dedicated to advancing the theory and practice of computer-aided formal analysis methods for hardware and software systems.</p>
-      <div class="home-hero__dateline" aria-label="Conference date and location">
-        <a class="home-hero__date" href="{{ '/program/' | relative_url }}">
-          <span class="home-hero__date-month">{{ hero_month }}</span>
-          <span class="home-hero__date-days">{{ hero_days }}</span>
-        </a>
-        <a class="home-hero__place" href="{{ '/venue/' | relative_url }}">
-          <span class="home-hero__place-city">{{ site.data.conference.venue.city }}</span>
-          <span class="home-hero__place-detail">{{ site.data.conference.venue.country }} · {{ site.data.conference.venue.name }}</span>
-        </a>
+      <div class="home-hero__text">
+        <h1>{{ site.data.conference.full_name | strip_html }}</h1>
+        <p class="home-hero__tagline">The flagship conference dedicated to advancing the theory and practice of computer-aided formal analysis methods for hardware and software systems.</p>
+        <div class="home-hero__dateline" aria-label="Conference date and location">
+          <a class="home-hero__date" href="{{ '/program/' | relative_url }}">
+            <span class="home-hero__date-month">{{ hero_month }}</span>
+            <span class="home-hero__date-days">{{ hero_days }}</span>
+          </a>
+          <a class="home-hero__place" href="{{ '/venue/' | relative_url }}">
+            <span class="home-hero__place-city">{{ site.data.conference.venue.city }}</span>
+            <span class="home-hero__place-detail">{{ site.data.conference.venue.country }} · {{ site.data.conference.venue.name }}</span>
+          </a>
+        </div>
       </div>
     </div>
     {% if page.cover-img %}
       <div class="home-hero__media" aria-hidden="true">
-        <img src="{{ page.cover-img | relative_url }}" alt="" decoding="async" fetchpriority="high">
+        <img class="home-hero__photo" src="{{ page.cover-img | relative_url }}" alt="" decoding="async" fetchpriority="high">
       </div>
     {% endif %}
   </div>
