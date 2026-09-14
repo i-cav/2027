@@ -44,8 +44,8 @@ A short (approximately one page) justification of the proposed topic, its signif
 - Contact information of the workshop organizers
 - Primary contact (Workshop Chair)
 - Desired length of the workshop (one or two days)
-- Estimated audience size, along with a brief justification.
-- Proposed format and agenda (e.g., demo sessions, tutorials, etc.)
+- Estimated audience size, along with a brief justification
+- Proposed format and agenda (e.g., demo sessions or tutorials)
 - Potential invited speakers
 - Procedures for selecting papers and participants
 - Plans for dissemination, if any (e.g., special issues of journals)

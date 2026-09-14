@@ -15,7 +15,7 @@ Early registration deadline: **Tuesday, 18 May 2027**.
 
 ## Cancellation Refunds
 
-In the event that the symposium is cancelled due to circumstances
+If the conference is cancelled due to circumstances
 beyond the organizers' control, refunds are not guaranteed. If refunds
 are issued, the amount will depend on the expenses and financial
-commitments incurred by the symposium as of the cancellation date.
+commitments incurred by the conference as of the cancellation date.

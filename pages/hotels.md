@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hotels near CAV 2027
+title: Hotels
 permalink: /hotels/
 topic: attend
 share-description: Hotel booking information for CAV 2027 attendees in Amsterdam.

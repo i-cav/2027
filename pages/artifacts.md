@@ -3,15 +3,15 @@ layout: page
 title: Artifact Evaluation
 permalink: /artifacts/
 topic: authors
+share-description: Artifact evaluation information and deadlines for CAV 2027.
 cover-img: "/assets/img/hero/clogs.jpg"
 ---
 
 Submission instructions, review process details, and badge criteria will be
 announced here.
 
-Artifacts for tool papers will be reviewed in parallel with the paper
-submission. The final acceptance decision will be based on the outcomes of
-both the paper reviews and the artifact reviews. See the
+Artifacts for tool papers will be reviewed alongside the papers. The final
+acceptance decision will be based on both the paper and artifact reviews. See the
 [Call for Papers]({{ "/cfp/" | relative_url }}) for the full paper timeline.
 
 ## Key Dates
@@ -27,7 +27,7 @@ Registration and submission deadlines are at 23:59 AoE (Anywhere on Earth).
       <td><button class="deadline-date" type="button" data-local-deadline data-deadline-utc="2027-03-09T11:59:00Z" data-original-deadline="Monday, 8 March 2027, 23:59 AoE"><time datetime="2027-03-09T11:59:00Z">Monday, 8 March 2027, 23:59 AoE</time></button></td>
     </tr>
     <tr>
-      <td>Artifact submission deadline (reviewing starts)</td>
+      <td>Artifact submission deadline (review starts)</td>
       <td><button class="deadline-date" type="button" data-local-deadline data-deadline-utc="2027-03-12T11:59:00Z" data-original-deadline="Thursday, 11 March 2027, 23:59 AoE"><time datetime="2027-03-12T11:59:00Z">Thursday, 11 March 2027, 23:59 AoE</time></button></td>
     </tr>
     <tr>
@@ -50,7 +50,7 @@ Registration and submission deadlines are at 23:59 AoE (Anywhere on Earth).
       <td><button class="deadline-date" type="button" data-local-deadline data-deadline-utc="2027-04-27T11:59:00Z" data-original-deadline="Monday, 26 April 2027, 23:59 AoE"><time datetime="2027-04-27T11:59:00Z">Monday, 26 April 2027, 23:59 AoE</time></button></td>
     </tr>
     <tr>
-      <td>Artifact submission deadline (reviewing starts)</td>
+      <td>Artifact submission deadline (review starts)</td>
       <td><button class="deadline-date" type="button" data-local-deadline data-deadline-utc="2027-05-04T11:59:00Z" data-original-deadline="Monday, 3 May 2027, 23:59 AoE"><time datetime="2027-05-04T11:59:00Z">Monday, 3 May 2027, 23:59 AoE</time></button></td>
     </tr>
     <tr>

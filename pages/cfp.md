@@ -3,6 +3,7 @@ layout: page
 title: Call for Papers
 permalink: /cfp/
 topic: authors
+share-description: Paper submission information and deadlines for CAV 2027.
 cover-img: "/assets/img/hero/amsterdam-canal.jpg"
 ---
 
@@ -24,7 +25,7 @@ All deadlines are AoE (Anywhere on Earth).
       <td>Thursday, 28 January 2027</td>
     </tr>
     <tr>
-      <td>Early-reject notification</td>
+      <td>Early rejection notification</td>
       <td>Thursday, 4 March 2027</td>
     </tr>
     <tr>

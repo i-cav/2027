@@ -14,7 +14,7 @@ cover-img: "/assets/img/hero/amsterdam-canal.jpg"
 
 ## Travel to Amsterdam
 
-By air, [Amsterdam Airport Schiphol](https://www.schiphol.nl/en/) has direct flight connections to a wide variety of cities. The airport has a [railway station below the terminal](https://www.schiphol.nl/en/from-to-schiphol/by-public-transport/train/), with train connections into Amsterdam.
+[Amsterdam Airport Schiphol](https://www.schiphol.nl/en/) has direct flights to many cities. Its [railway station below the terminal](https://www.schiphol.nl/en/from-to-schiphol/by-public-transport/train/) offers connections into Amsterdam.
 
 By rail, Amsterdam is reachable by [international train services](https://www.nsinternational.com/en) from many European cities. Major Amsterdam rail and public-transport stations include Amsterdam Centraal, Amsterdam Zuid, and Amsterdam Amstel.
 
@@ -32,7 +32,7 @@ Amsterdam's museum scene is one of the city's main draws. It includes the world-
 
 One of the city's most moving historical landmarks is the [Anne Frank House](https://www.annefrank.org/en/museum/), where visitors can explore the secret annex in which Anne Frank and her family hid during the Second World War.
 
-Beyond its famous attractions, Amsterdam offers vibrant street markets, cozy canal cruises, diverse international cuisine, and an atmosphere that feels both relaxed and culturally rich.
+Beyond these attractions, visitors can explore street markets, take a canal cruise, and try the city's international cuisine.
 
 <nav class="page-related-links" aria-label="Amsterdam visitor and conference links">
   <span class="page-related-links__label">See also:</span>
