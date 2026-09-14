@@ -7,7 +7,7 @@ cover-img: "/assets/img/kit-royal-tropical-institute.jpg"
 {% include homepage-cta.html %}
 
 <div class="lead-copy">
-  <p>The 39th edition of CAV will be the first held in the Netherlands.</p>
+  <p>CAV 2027 is the 39th edition of CAV, and takes place&mdash;for the first time ever&mdash;in the Netherlands.</p>
   <p>The conference spans theoretical results, algorithms, implementation techniques, and concrete applications, with a strong emphasis on practical verification tools.</p>
   <p>CAV continues to spur progress in hardware and software verification while broadening its scope to emerging domains, including machine learning, quantum verification, autonomous systems, and computer security.</p>
   <p>CAV's first Dutch edition connects the conference with a deep local tradition in computing, including <a href="https://en.wikipedia.org/wiki/Edsger_W._Dijkstra">Edsger W. Dijkstra</a>'s lasting influence on programming, algorithms, and formal reasoning.</p>
