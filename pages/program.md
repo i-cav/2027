@@ -22,7 +22,7 @@ cover-img: "/assets/img/hero/windmill.jpg"
     </div>
     <div>
       <dt>Wednesday, July 21, 2027</dt>
-      <dd>Main conference</dd>
+      <dd>Main conference with Industry Day</dd>
     </div>
     <div>
       <dt>Thursday, July 22, 2027</dt>
@@ -33,6 +33,11 @@ cover-img: "/assets/img/hero/windmill.jpg"
       <dd>Main conference</dd>
     </div>
   </dl>
+</section>
+
+<section id="industry-day" class="program-overview" aria-labelledby="industry-day-heading">
+  <h2 id="industry-day-heading">Industry Day</h2>
+  <p>The CAV 2027 Industry Day will feature an industry-relevant keynote, application-focused presentations, and industrial case studies.</p>
 </section>
 
 <section class="program-overview" aria-labelledby="social-program-heading">
