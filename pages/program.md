@@ -37,7 +37,7 @@ cover-img: "/assets/img/hero/windmill.jpg"
 
 <section id="industry-day" class="program-overview" aria-labelledby="industry-day-heading">
   <h2 id="industry-day-heading">Industry Day</h2>
-  <p>The CAV 2027 Industry Day will feature an industry-relevant keynote, application-focused presentations, and industrial case studies.</p>
+  <p>The CAV 2027 Industry Day will focus on formal verification in industrial settings, featuring case studies, a keynote speaker from industry, and opportunities for networking.</p>
 </section>
 
 <section class="program-overview" aria-labelledby="social-program-heading">
