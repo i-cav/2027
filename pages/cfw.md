@@ -115,7 +115,7 @@ All deadlines are AoE (Anywhere on Earth).
   <tbody>
     <tr>
       <td>Proposals due</td>
-      <td><button class="deadline-date" type="button" data-local-deadline data-deadline-utc="2026-09-16T11:59:00Z" data-original-deadline="September 15, 2026 AoE"><time datetime="2026-09-16T11:59:00Z">September 15, 2026</time></button></td>
+      <td>{% include deadline-date.html utc="2026-09-16T11:59:00Z" label="September 15, 2026" original="September 15, 2026 AoE" %}</td>
     </tr>
     <tr>
       <td>Notification of accepted proposals</td>
@@ -132,11 +132,11 @@ Organizers of accepted workshops must adhere to the following deadlines:
   <tbody>
     <tr>
       <td>Webpage online</td>
-      <td><button class="deadline-date" type="button" data-local-deadline data-deadline-utc="2026-11-02T11:59:00Z" data-original-deadline="November 1, 2026 AoE"><time datetime="2026-11-02T11:59:00Z">November 1, 2026</time></button></td>
+      <td>{% include deadline-date.html utc="2026-11-02T11:59:00Z" label="November 1, 2026" original="November 1, 2026 AoE" %}</td>
     </tr>
     <tr>
       <td>Call for contributions</td>
-      <td><button class="deadline-date" type="button" data-local-deadline data-deadline-utc="2027-01-02T11:59:00Z" data-original-deadline="January 1, 2027 AoE"><time datetime="2027-01-02T11:59:00Z">January 1, 2027</time></button></td>
+      <td>{% include deadline-date.html utc="2027-01-02T11:59:00Z" label="January 1, 2027" original="January 1, 2027 AoE" %}</td>
     </tr>
     <tr>
       <td>Notifications for participants</td>

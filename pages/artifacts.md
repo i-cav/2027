@@ -24,11 +24,11 @@ Registration and submission deadlines are at 23:59 AoE (Anywhere on Earth).
   <tbody>
     <tr>
       <td>Artifact registration</td>
-      <td><button class="deadline-date" type="button" data-local-deadline data-deadline-utc="2027-03-09T11:59:00Z" data-original-deadline="Monday, 8 March 2027, 23:59 AoE"><time datetime="2027-03-09T11:59:00Z">Monday, 8 March 2027, 23:59 AoE</time></button></td>
+      <td>{% include deadline-date.html utc="2027-03-09T11:59:00Z" label="Monday, 8 March 2027, 23:59 AoE" %}</td>
     </tr>
     <tr>
       <td>Artifact submission deadline (review starts)</td>
-      <td><button class="deadline-date" type="button" data-local-deadline data-deadline-utc="2027-03-12T11:59:00Z" data-original-deadline="Thursday, 11 March 2027, 23:59 AoE"><time datetime="2027-03-12T11:59:00Z">Thursday, 11 March 2027, 23:59 AoE</time></button></td>
+      <td>{% include deadline-date.html utc="2027-03-12T11:59:00Z" label="Thursday, 11 March 2027, 23:59 AoE" %}</td>
     </tr>
     <tr>
       <td>Artifact smoke-test revision period</td>
@@ -47,11 +47,11 @@ Registration and submission deadlines are at 23:59 AoE (Anywhere on Earth).
   <tbody>
     <tr>
       <td>Artifact registration</td>
-      <td><button class="deadline-date" type="button" data-local-deadline data-deadline-utc="2027-04-27T11:59:00Z" data-original-deadline="Monday, 26 April 2027, 23:59 AoE"><time datetime="2027-04-27T11:59:00Z">Monday, 26 April 2027, 23:59 AoE</time></button></td>
+      <td>{% include deadline-date.html utc="2027-04-27T11:59:00Z" label="Monday, 26 April 2027, 23:59 AoE" %}</td>
     </tr>
     <tr>
       <td>Artifact submission deadline (review starts)</td>
-      <td><button class="deadline-date" type="button" data-local-deadline data-deadline-utc="2027-05-04T11:59:00Z" data-original-deadline="Monday, 3 May 2027, 23:59 AoE"><time datetime="2027-05-04T11:59:00Z">Monday, 3 May 2027, 23:59 AoE</time></button></td>
+      <td>{% include deadline-date.html utc="2027-05-04T11:59:00Z" label="Monday, 3 May 2027, 23:59 AoE" %}</td>
     </tr>
     <tr>
       <td>Artifact smoke-test revision period</td>

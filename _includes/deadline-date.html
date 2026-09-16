@@ -1,0 +1,1 @@
+<button class="deadline-date" type="button" data-local-deadline data-deadline-utc="{{ include.utc | escape }}" data-original-deadline="{{ include.original | default: include.label | escape }}">{% if include.range %}{{ include.label }}{% else %}<time datetime="{{ include.utc | escape }}">{{ include.label }}</time>{% endif %}</button>

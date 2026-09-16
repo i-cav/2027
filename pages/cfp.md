@@ -18,7 +18,7 @@ All deadlines are AoE (Anywhere on Earth).
   <tbody>
     <tr>
       <td>Submission deadline</td>
-      <td><button class="deadline-date" type="button" data-local-deadline data-deadline-utc="2027-01-21T11:59:00Z" data-original-deadline="Wednesday, 20 January 2027, 23:59 AoE"><time datetime="2027-01-21T11:59:00Z">Wednesday, 20 January 2027, 23:59 AoE</time></button></td>
+      <td>{% include deadline-date.html utc="2027-01-21T11:59:00Z" label="Wednesday, 20 January 2027, 23:59 AoE" %}</td>
     </tr>
     <tr>
       <td>Review starts</td>
@@ -30,7 +30,7 @@ All deadlines are AoE (Anywhere on Earth).
     </tr>
     <tr>
       <td>Response period</td>
-      <td><button class="deadline-date" type="button" data-local-deadline data-deadline-utc="2027-04-09T11:59:00Z" data-original-deadline="Monday, 5 April 2027 - Thursday, 8 April 2027, 23:59 AoE">Monday, 5 April 2027 &ndash; Thursday, 8 April 2027, 23:59 AoE</button></td>
+      <td>{% include deadline-date.html utc="2027-04-09T11:59:00Z" label="Monday, 5 April 2027 &ndash; Thursday, 8 April 2027, 23:59 AoE" original="Monday, 5 April 2027 - Thursday, 8 April 2027, 23:59 AoE" range=true %}</td>
     </tr>
     <tr>
       <td>Notification</td>
