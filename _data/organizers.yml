@@ -41,6 +41,13 @@ roles:
         affiliation: University of Amsterdam
         photo: /assets/img/organizers/thomas-van-binsbergen.jpg
         photo_source: https://ltvanbinsbergen.nl/files/profile.jpg
+  - title: Organisation Support
+    people:
+      - name: Marion Steenbergen
+        url: https://people.utwente.nl/m.h.steenbergen
+        affiliation: University of Twente
+        photo: /assets/img/organizers/marion-steenbergen.jpg
+        photo_source: https://utwente.becdn.net/.wh/ea/uc/i4d5f7e6401035b28f101501a7203f2a098a672ca6f8d0c016340014001854100000000/marion-closeup-juli-2024.avif
   - title: Artifact Evaluation Chairs
     people:
       - name: Tim Quatmann
@@ -128,4 +135,3 @@ roles:
         affiliation: University of Southern California
         photo: /assets/img/organizers/mukund-raghothaman.jpg
         photo_source: https://r-mukund.github.io/images/hs/m2018-57.jpg
-      - name: TBA
