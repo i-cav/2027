@@ -6,21 +6,7 @@
     <h{{ organizer_heading_level }} class="organizer-role__title" id="organizer-featured-{{ forloop.index }}">{{ include.featured_title | default: role.title }}</h{{ organizer_heading_level }}>
     <ul class="organizer-list organizer-featured__list">
     {% for person in role.people %}
-      <li class="organizer-person{% if person.photo %} organizer-person--photo{% endif %}">
-        {% if person.photo %}
-          <img class="organizer-photo" src="{{ person.photo | relative_url }}" alt="" width="72" height="82" loading="eager" decoding="async">
-        {% endif %}
-        <span class="organizer-person__details">
-          {% if person.url %}
-            <a class="organizer-person__name" href="{{ person.url }}">{{ person.name }}</a>
-          {% else %}
-            <span class="organizer-person__name">{{ person.name }}</span>
-          {% endif %}
-          {% if person.affiliation %}
-            <span class="organizer-person__affiliation">{{ person.affiliation }}</span>
-          {% endif %}
-        </span>
-      </li>
+      {% include organizer-person.html person=person loading="eager" %}
     {% endfor %}
     </ul>
   </section>
@@ -34,21 +20,7 @@
     <h{{ organizer_heading_level }} class="organizer-role__title">{{ role.title }}</h{{ organizer_heading_level }}>
     <ul class="organizer-list">
     {% for person in role.people %}
-      <li class="organizer-person{% if person.photo %} organizer-person--photo{% endif %}">
-        {% if person.photo %}
-          <img class="organizer-photo" src="{{ person.photo | relative_url }}" alt="" width="72" height="82" loading="lazy" decoding="async">
-        {% endif %}
-        <span class="organizer-person__details">
-          {% if person.url %}
-            <a class="organizer-person__name" href="{{ person.url }}">{{ person.name }}</a>
-          {% else %}
-            <span class="organizer-person__name">{{ person.name }}</span>
-          {% endif %}
-          {% if person.affiliation %}
-            <span class="organizer-person__affiliation">{{ person.affiliation }}</span>
-          {% endif %}
-        </span>
-      </li>
+      {% include organizer-person.html person=person %}
     {% endfor %}
     </ul>
   </section>

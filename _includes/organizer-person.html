@@ -1,0 +1,15 @@
+<li class="organizer-person{% if include.person.photo and include.show_photo != false %} organizer-person--photo{% endif %}">
+  {% if include.person.photo and include.show_photo != false %}
+    <img class="organizer-photo" src="{{ include.person.photo | relative_url }}" alt="" width="72" height="82" loading="{{ include.loading | default: 'lazy' }}" decoding="async">
+  {% endif %}
+  <span class="organizer-person__details">
+    {% if include.person.url %}
+      <a class="organizer-person__name" href="{{ include.person.url }}">{{ include.person.name }}</a>
+    {% else %}
+      <span class="organizer-person__name">{{ include.person.name }}</span>
+    {% endif %}
+    {% if include.person.affiliation %}
+      <span class="organizer-person__affiliation">{{ include.person.affiliation }}</span>
+    {% endif %}
+  </span>
+</li>

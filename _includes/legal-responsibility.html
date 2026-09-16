@@ -6,14 +6,7 @@
     <h2 class="organizer-role__title">Conference Content</h2>
     <ul class="organizer-list">
     {% for person in general_chairs.people %}
-      <li class="organizer-person">
-        <span class="organizer-person__details">
-          <a class="organizer-person__name" href="{{ person.url }}">{{ person.name }}</a>
-          {% if person.affiliation %}
-            <span class="organizer-person__affiliation">{{ person.affiliation }}</span>
-          {% endif %}
-        </span>
-      </li>
+      {% include organizer-person.html person=person show_photo=false %}
     {% endfor %}
     </ul>
   </section>
@@ -22,14 +15,7 @@
     <h2 class="organizer-role__title">Website Maintenance</h2>
     <ul class="organizer-list">
     {% for person in website_chair.people %}
-      <li class="organizer-person">
-        <span class="organizer-person__details">
-          <a class="organizer-person__name" href="{{ person.url }}">{{ person.name }}</a>
-          {% if person.affiliation %}
-            <span class="organizer-person__affiliation">{{ person.affiliation }}</span>
-          {% endif %}
-        </span>
-      </li>
+      {% include organizer-person.html person=person show_photo=false %}
     {% endfor %}
     </ul>
   </section>
