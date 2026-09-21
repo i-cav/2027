@@ -4,7 +4,7 @@ title: Amsterdam
 permalink: /amsterdam/
 topic: attend
 share-description: Visitor information for Amsterdam, host city of CAV 2027.
-cover-img: "/assets/img/hero/amsterdam-canal.jpg"
+cover-img: "/assets/img/hero/amsterdam-westerkerk.jpg"
 ---
 
 <div class="lead-copy">

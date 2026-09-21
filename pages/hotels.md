@@ -4,7 +4,7 @@ title: Hotels
 permalink: /hotels/
 topic: attend
 share-description: Hotel booking information for CAV 2027 attendees in Amsterdam.
-cover-img: "/assets/img/hero/amsterdam-canal.jpg"
+cover-img: "/assets/img/hero/singel-evening.jpg"
 ---
 
 <div class="lead-copy">

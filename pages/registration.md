@@ -4,7 +4,7 @@ title: Registration
 permalink: /registration/
 topic: attend
 share-description: CAV 2027 registration information.
-cover-img: "/assets/img/hero/amsterdam-canal.jpg"
+cover-img: "/assets/img/hero/amsterdam-westerkerk.jpg"
 ---
 
 <p class="lead-copy">Registration details for CAV 2027 will be announced here as they become available.</p>

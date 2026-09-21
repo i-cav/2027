@@ -4,7 +4,7 @@ title: Call for Papers
 permalink: /cfp/
 topic: authors
 share-description: Paper submission information and deadlines for CAV 2027.
-cover-img: "/assets/img/hero/amsterdam-canal.jpg"
+cover-img: "/assets/img/hero/amsterdam-westerkerk.jpg"
 ---
 
 <dl class="intro-facts" aria-label="CAV 2027 paper submission facts">

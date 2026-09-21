@@ -4,7 +4,7 @@ title: Program Overview
 permalink: /program/
 topic: program
 share-description: CAV 2027 program overview.
-cover-img: "/assets/img/hero/windmill.jpg"
+cover-img: "/assets/img/hero/zaanse-windmills.jpg"
 ---
 
 <p class="lead-copy">The detailed CAV 2027 program will be announced here as it becomes available.</p>

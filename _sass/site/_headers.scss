@@ -120,8 +120,14 @@
   border-color: var(--accent);
 }
 
-.decorative-hero[style*="amsterdam-canal"] {
-  background-position: center 80%;
+.decorative-hero[style*="amsterdam-westerkerk"] {
+  // Keep the tower clear of the title in the narrower mobile crop.
+  background-position: 25% 20%;
+}
+
+.decorative-hero[style*="singel-evening"] {
+  // Retain the illuminated canal houses and their reflections.
+  background-position: 65% 65%;
 }
 
 .decorative-hero[style*="kit-royal-tropical-institute"] {
@@ -132,8 +138,9 @@
   background-position: center 46%;
 }
 
-.decorative-hero[style*="windmill"] {
-  background-position: center 42%;
+.decorative-hero[style*="zaanse-windmills"] {
+  // Favor the windmills above the meadow, including the rightmost mill on mobile.
+  background-position: right top;
 }
 
 .decorative-hero-main {

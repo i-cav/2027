@@ -4,7 +4,7 @@ title: Artifact Evaluation
 permalink: /artifacts/
 topic: authors
 share-description: Artifact evaluation information and deadlines for CAV 2027.
-cover-img: "/assets/img/hero/clogs.jpg"
+cover-img: "/assets/img/hero/wooden-clogs.jpg"
 ---
 
 Submission instructions, review process details, and badge criteria will be
