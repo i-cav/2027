@@ -1,5 +1,5 @@
-<li class="organizer-person{% if include.person.photo and include.show_photo != false %} organizer-person--photo{% endif %}">
-  {% if include.person.photo and include.show_photo != false %}
+<li class="organizer-person{% if include.person.photo %} organizer-person--photo{% endif %}">
+  {% if include.person.photo %}
     {% if include.person.url %}
       <a class="organizer-person__photo-link" href="{{ include.person.url }}" aria-label="{{ include.person.name | escape }}">
     {% endif %}

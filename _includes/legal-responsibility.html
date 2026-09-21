@@ -6,7 +6,7 @@
     <h2 class="organizer-role__title" id="conference-content">Conference Content</h2>
     <ul class="organizer-list">
     {% for person in general_chairs.people %}
-      {% include organizer-person.html person=person show_photo=false %}
+      {% include organizer-person.html person=person %}
     {% endfor %}
     </ul>
   </section>
@@ -15,7 +15,7 @@
     <h2 class="organizer-role__title" id="website-maintenance">Website Maintenance</h2>
     <ul class="organizer-list">
     {% for person in website_chair.people %}
-      {% include organizer-person.html person=person show_photo=false %}
+      {% include organizer-person.html person=person %}
     {% endfor %}
     </ul>
   </section>
