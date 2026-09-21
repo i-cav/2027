@@ -1,0 +1,25 @@
+@use "sass:list";
+@use "sass:math";
+
+@function -smoothstep($t) {
+  @return $t * $t * (3 - 2 * $t);
+}
+
+// CSS gradients cannot take easing functions, so sample the shared curve at
+// build time. Stops run from transparent to opaque unless reversed.
+@function fade-stops($rgb, $start: 0%, $end: 100%, $reverse: false) {
+  $stops: ();
+  $steps: 20;
+
+  @for $i from 0 through $steps {
+    $t: math.div($i, $steps);
+    $opacity: -smoothstep($t);
+    @if $reverse {
+      $opacity: 1 - $opacity;
+    }
+    $position: $start + ($end - $start) * $t;
+    $stops: list.append($stops, rgba($rgb, $opacity) $position, comma);
+  }
+
+  @return $stops;
+}

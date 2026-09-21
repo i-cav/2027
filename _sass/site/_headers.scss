@@ -1,4 +1,5 @@
 @use "mixins" as *;
+@use "gradients";
 
 /* ==========================================================================
    Page Headers and Hero Images
@@ -146,29 +147,13 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  // Fade the bottom into the page and the left side behind the title.
+  // Curve the left blend around the photo instead of leaving a pale vertical
+  // strip. The ellipse reaches the page color at the photo's left edge.
   background:
-    linear-gradient(180deg,
-      rgba(var(--bg-rgb), 0) 25%,
-      rgba(var(--bg-rgb), 0.02) 35%,
-      rgba(var(--bg-rgb), 0.08) 45%,
-      rgba(var(--bg-rgb), 0.2) 55%,
-      rgba(var(--bg-rgb), 0.4) 65%,
-      rgba(var(--bg-rgb), 0.64) 75%,
-      rgba(var(--bg-rgb), 0.84) 85%,
-      rgba(var(--bg-rgb), 0.96) 90%,
-      rgba(var(--bg-rgb), 0.99) 95%,
-      var(--bg) 98%,
-      var(--bg) 100%),
-    linear-gradient(90deg,
-      var(--bg) 0%,
-      rgba(var(--bg-rgb), 0.98) 8%,
-      rgba(var(--bg-rgb), 0.85) 16%,
-      rgba(var(--bg-rgb), 0.62) 24%,
-      rgba(var(--bg-rgb), 0.37) 32%,
-      rgba(var(--bg-rgb), 0.16) 40%,
-      rgba(var(--bg-rgb), 0.04) 50%,
-      rgba(var(--bg-rgb), 0) 60%),
+    linear-gradient(to top,
+      gradients.fade-stops(var(--bg-rgb), $end: 76%, $reverse: true)),
+    radial-gradient(ellipse 100% 140% at 100% 0%,
+      gradients.fade-stops(var(--bg-rgb), $start: 48%)),
     var(--image-tone-overlay);
   pointer-events: none;
 }
