@@ -40,32 +40,130 @@
   opacity: 0.25;
 }
 
-.decorative-hero {
-  --hero-title-max: 42rem;
-  --hero-compact-max: 34rem;
-  --hero-rule-width: 4.75rem;
-  --hero-rule-height: 3px;
+.hero-parallax-photo {
+  --hero-parallax-rate: 0.18;
+  --hero-parallax-limit: 48px;
 
-  min-height: 15rem;
-  display: flex;
-  isolation: isolate;
-  overflow: hidden;
-  margin-top: 0;
-  border-top: var(--border);
-  border-bottom: var(--border);
-  background-position: center 52%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
-.decorative-hero::before {
+@media (max-width: 767.98px) {
+  .hero-parallax-photo {
+    --hero-parallax-rate: 0.12;
+    --hero-parallax-limit: 24px;
+  }
+}
+
+.decorative-hero {
+  --hero-image-extension: 12rem;
+
+  min-height: 18rem;
+  display: flex;
+  isolation: isolate;
+  overflow: visible;
+  margin-top: 0;
+  border-top: var(--border);
+  border-bottom: 0;
+}
+
+// Extend the photo below the heading so it fades behind the page content.
+.decorative-hero__track {
+  --hero-sticky-hold: 30rem;
+
+  position: absolute;
+  inset: 0 0 calc(-1 * var(--hero-image-extension)) 35%;
+  pointer-events: none;
+}
+
+.decorative-hero__media {
+  --hero-parallax-rate: 0.55;
+  --hero-parallax-limit: 720px;
+
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+// Keep photos still for reduced motion; otherwise enable parallax.
+@media (prefers-reduced-motion: no-preference) {
+  .hero-parallax-photo {
+    // Give the photo extra height above its frame to keep it covered during motion.
+    top: calc(-1 * var(--hero-parallax-limit));
+    height: calc(100% + var(--hero-parallax-limit));
+  }
+
+  // Hold the photo below the nav until its track ends, then let it scroll away.
+  @supports not ((animation-timeline: scroll(root block)) and (animation-range: 0px calc(48px / 0.18))) {
+    .decorative-hero__track {
+      bottom: calc(-1 * (var(--hero-image-extension) + var(--hero-sticky-hold)));
+    }
+
+    .decorative-hero__media {
+      position: sticky;
+      inset: var(--nav-height) 0 auto;
+      height: calc(100% - var(--hero-sticky-hold));
+    }
+  }
+
+  // Move the photo down as the page scrolls so it leaves the viewport more slowly.
+  @supports (animation-timeline: scroll(root block)) and (animation-range: 0px calc(48px / 0.18)) {
+    .home-hero__photo,
+    .decorative-hero__media {
+      animation: hero-parallax 1ms linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0px calc(var(--hero-parallax-limit) / var(--hero-parallax-rate));
+      will-change: transform;
+    }
+  }
+}
+
+@keyframes hero-parallax {
+  from { transform: translateY(0); }
+  to { transform: translateY(var(--hero-parallax-limit)); }
+}
+
+.decorative-hero__photo {
+  object-position: center 50%;
+  opacity: 0.9;
+}
+
+.decorative-hero__media::after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 0;
+  z-index: 1;
+  // Fade the bottom into the page and the left side behind the title.
   background:
-    linear-gradient(90deg, rgba(var(--bg-rgb), 0.97) 0%, rgba(var(--bg-rgb), 0.84) 32%, rgba(var(--bg-rgb), 0.44) 58%, rgba(var(--bg-rgb), 0.06) 82%),
+    linear-gradient(180deg,
+      rgba(var(--bg-rgb), 0) 25%,
+      rgba(var(--bg-rgb), 0.02) 35%,
+      rgba(var(--bg-rgb), 0.08) 45%,
+      rgba(var(--bg-rgb), 0.2) 55%,
+      rgba(var(--bg-rgb), 0.4) 65%,
+      rgba(var(--bg-rgb), 0.64) 75%,
+      rgba(var(--bg-rgb), 0.84) 85%,
+      rgba(var(--bg-rgb), 0.96) 90%,
+      rgba(var(--bg-rgb), 0.99) 95%,
+      var(--bg) 98%,
+      var(--bg) 100%),
+    linear-gradient(90deg,
+      var(--bg) 0%,
+      rgba(var(--bg-rgb), 0.98) 8%,
+      rgba(var(--bg-rgb), 0.85) 16%,
+      rgba(var(--bg-rgb), 0.62) 24%,
+      rgba(var(--bg-rgb), 0.37) 32%,
+      rgba(var(--bg-rgb), 0.16) 40%,
+      rgba(var(--bg-rgb), 0.04) 50%,
+      rgba(var(--bg-rgb), 0) 60%),
     var(--image-tone-overlay);
+  pointer-events: none;
 }
 
 .decorative-hero .container-md {
@@ -86,30 +184,37 @@
 .decorative-hero .page-heading {
   position: relative;
   z-index: 0;
-  max-width: var(--hero-title-max);
+  max-width: 42rem;
   padding: var(--space-9) 0;
   color: var(--text);
 }
 
 .decorative-hero .page-heading::before {
   content: "";
-  width: var(--hero-rule-width);
-  height: var(--hero-rule-height);
+  width: 4.75rem;
+  height: 3px;
   display: block;
   margin-bottom: var(--space-3);
   border-radius: var(--radius-tight);
   background: linear-gradient(90deg, var(--accent) 0%, var(--accent) 86%, var(--brand-2) 86%, var(--brand-2) 100%);
 }
 
+.decorative-hero .page-heading h1,
+.decorative-hero .page-subheading {
+  max-width: 34rem;
+}
+
 .decorative-hero .page-heading h1 {
-  max-width: var(--hero-compact-max);
   font-size: 2.45rem;
   line-height: 1;
   overflow-wrap: normal;
+  text-shadow:
+    0 0 0.12em var(--bg),
+    0 0 0.35em var(--bg),
+    0 0 0.65em var(--bg);
 }
 
 .decorative-hero .page-subheading {
-  max-width: var(--hero-compact-max);
   font-size: 1.08rem;
   font-weight: 700;
   line-height: 1.35;
@@ -120,27 +225,27 @@
   border-color: var(--accent);
 }
 
-.decorative-hero[style*="amsterdam-westerkerk"] {
+.decorative-hero__photo[src*="kit-royal-tropical-institute"] {
+  object-position: center 40%;
+}
+
+.decorative-hero__photo[src*="amsterdam-westerkerk"] {
   // Keep the tower clear of the title in the narrower mobile crop.
-  background-position: 25% 20%;
+  object-position: 25% 20%;
 }
 
-.decorative-hero[style*="singel-evening"] {
+.decorative-hero__photo[src*="singel-evening"] {
   // Retain the illuminated canal houses and their reflections.
-  background-position: 65% 65%;
+  object-position: 65% 65%;
 }
 
-.decorative-hero[style*="kit-royal-tropical-institute"] {
-  background-position: center 48%;
+.decorative-hero__photo[src*="tulips"] {
+  object-position: center 46%;
 }
 
-.decorative-hero[style*="tulips"] {
-  background-position: center 46%;
-}
-
-.decorative-hero[style*="zaanse-windmills"] {
+.decorative-hero__photo[src*="zaanse-windmills"] {
   // Favor the windmills above the meadow, including the rightmost mill on mobile.
-  background-position: right top;
+  object-position: right top;
 }
 
 .decorative-hero-main {

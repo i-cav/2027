@@ -1,64 +1,4 @@
 // Modules expose page lifecycle hooks; global listeners dispatch the hooks below.
-const HeaderParallax = {
-  state: null,
-
-  afterLoad() {
-    // Turbo can re-enter a page from cache, so replace any old listeners before wiring new ones.
-    this.beforeCache();
-
-    // Shift hero image backgrounds only while visible; requestAnimationFrame keeps scroll work bounded.
-    const headers = Array.from(document.querySelectorAll(".decorative-hero"));
-    if (!headers.length || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    let active = true;
-    let ticking = false;
-
-    const update = () => {
-      if (!active) return;
-
-      const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-
-      headers.forEach((header) => {
-        const rect = header.getBoundingClientRect();
-        if (rect.bottom < 0 || rect.top > viewportHeight) return;
-
-        const offset = Math.round(rect.top * -0.05);
-        header.style.backgroundPosition = `center calc(46% + ${offset}px)`;
-      });
-      ticking = false;
-    };
-
-    const requestUpdate = () => {
-      if (ticking) return;
-      ticking = true;
-      window.requestAnimationFrame(update);
-    };
-
-    update();
-    window.addEventListener("scroll", requestUpdate, { passive: true });
-    window.addEventListener("resize", requestUpdate);
-
-    this.state = {
-      headers,
-      stop() {
-        active = false;
-        window.removeEventListener("scroll", requestUpdate);
-        window.removeEventListener("resize", requestUpdate);
-      }
-    };
-  },
-
-  beforeCache() {
-    if (!this.state) return;
-
-    this.state.stop();
-    this.state.headers.forEach((header) => {
-      header.style.backgroundPosition = "";
-    });
-    this.state = null;
-  }
-};
-
 const BootstrapTooltips = {
   afterLoad() {
     document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((trigger) => {
@@ -187,13 +127,11 @@ const HeadingPermalinks = {
 
 const afterLoad = () => {
   HeadingPermalinks.afterLoad();
-  HeaderParallax.afterLoad();
   DeadlinePopovers.afterLoad();
   BootstrapTooltips.afterLoad();
 };
 
 const beforeCache = () => {
-  HeaderParallax.beforeCache();
   DeadlinePopovers.beforeCache();
   BootstrapTooltips.beforeCache();
   BootstrapNavState.beforeCache();

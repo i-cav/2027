@@ -148,11 +148,28 @@
   }
 
   .decorative-hero {
-    min-height: 12.5rem;
+    --hero-image-extension: 5rem;
+
+    min-height: 16rem;
   }
 
-  .decorative-hero[style*="wooden-clogs"] {
-    background-position: 65% 50%;
+  .decorative-hero__track {
+    --hero-sticky-hold: 8rem;
+
+    left: 30%;
+  }
+
+  .decorative-hero__media {
+    --hero-parallax-rate: 0.3;
+    --hero-parallax-limit: 200px;
+  }
+
+  .decorative-hero__photo[src*="wooden-clogs"] {
+    object-position: 65% 50%;
+  }
+
+  .decorative-hero__photo[src*="tulips"] {
+    object-position: 60% 46%;
   }
 
   .decorative-hero .page-heading {

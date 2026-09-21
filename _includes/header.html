@@ -30,13 +30,20 @@
     </div>
     {% if page.cover-img %}
       <div class="home-hero__media" aria-hidden="true">
-        <img class="home-hero__photo" src="{{ page.cover-img | relative_url }}" alt="" decoding="async" fetchpriority="high">
+        <img class="home-hero__photo hero-parallax-photo" src="{{ page.cover-img | relative_url }}" alt="" decoding="async" fetchpriority="high">
       </div>
     {% endif %}
   </div>
 </div>
 {% else %}
-<div class="intro-header {% if page.cover-img %}decorative-hero{% else %}plain-header{% endif %}"{% if page.cover-img %} style="background-image: url('{{ page.cover-img | relative_url }}');"{% endif %}>
+<div class="intro-header {% if page.cover-img %}decorative-hero{% else %}plain-header{% endif %}">
+  {% if page.cover-img %}
+  <div class="decorative-hero__track" aria-hidden="true">
+    <div class="decorative-hero__media">
+      <img class="decorative-hero__photo hero-parallax-photo" src="{{ page.cover-img | relative_url }}" alt="" decoding="async" fetchpriority="high">
+    </div>
+  </div>
+  {% endif %}
   {% if page.cover-img or page.title %}
   <div class="container-md">
     <div class="row">
