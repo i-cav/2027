@@ -97,7 +97,7 @@
 
 @media (max-width: 900px) {
   .homepage-cta {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 18rem);
     margin-top: 0;
   }
 

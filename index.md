@@ -19,12 +19,6 @@ cover-img: "/assets/img/kit-royal-tropical-institute.jpg"
   <p>All deadlines are AoE (Anywhere on Earth).</p>
 
   <div class="important-dates__list">
-    <a class="important-dates__item topic-authors" href="{{ '/cfw/' | relative_url }}">
-      <span class="important-dates__label">Workshop proposal deadline</span>
-      <span class="important-dates__value">
-        <span class="important-dates__date">Tuesday, 15 September 2026</span>
-      </span>
-    </a>
     <a class="important-dates__item topic-authors" href="{{ '/cfp/' | relative_url }}">
       <span class="important-dates__label">Submission deadline</span>
       <span class="important-dates__value">
