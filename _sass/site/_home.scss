@@ -393,11 +393,6 @@ body.home-page {
   color: inherit;
 }
 
-.homepage-cta__item:hover .homepage-cta__title,
-.homepage-cta__item:focus .homepage-cta__title {
-  color: var(--brand);
-}
-
 .homepage-cta__icon,
 .homepage-cta__content {
   position: relative;
@@ -461,8 +456,6 @@ body.home-page {
 
 .important-dates h2 {
   margin: 0;
-  padding-top: 0;
-  border-top: 0;
 }
 
 .important-dates p {
@@ -504,11 +497,6 @@ body.home-page {
   text-decoration: none;
 }
 
-.important-dates__item:hover .important-dates__label,
-.important-dates__item:focus .important-dates__label {
-  color: var(--brand);
-}
-
 .important-dates__label,
 .important-dates__value {
   font-family: var(--header-font);
@@ -527,16 +515,4 @@ body.home-page {
 
 .important-dates__date {
   display: block;
-}
-
-.important-dates__note {
-  display: inline-block;
-  margin-top: var(--space-1);
-  padding: 0.125rem var(--space-2);
-  border: var(--border);
-  border-radius: var(--radius-pill);
-  background: var(--surface-muted);
-  color: var(--brand);
-  font-size: var(--font-size-sm);
-  font-weight: 700;
 }

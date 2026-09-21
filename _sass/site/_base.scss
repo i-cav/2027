@@ -38,12 +38,6 @@ body > main {
   margin-top: 0;
 }
 
-.page-content-card > h2:first-child,
-.page-content-card > h3:first-child {
-  padding-top: 0;
-  border-top: 0;
-}
-
 .page-content-card > :last-child {
   margin-bottom: 0;
 }
@@ -114,6 +108,7 @@ h3 + p {
   margin-top: var(--space-2);
 }
 
+/* Markdown lists use prose spacing; component lists own their layout. */
 main ul:not([class]),
 main ol:not([class]) {
   margin: var(--space-4) 0;
@@ -124,6 +119,7 @@ main li:not([class]) + li:not([class]) {
   margin-top: var(--space-1);
 }
 
+/* Keep an introductory paragraph and its list visually grouped. */
 main p + ul:not([class]),
 main p + ol:not([class]) {
   margin-top: calc(-1 * var(--space-2));
@@ -187,15 +183,7 @@ blockquote p:first-child {
   margin-top: 0;
 }
 
-hr.small {
-  max-width: 5.5rem;
-  margin: var(--space-4) auto;
-  border-width: 0.22rem;
-  border-color: inherit;
-  border-radius: var(--radius-tight);
-}
-
-hr:not(.small) {
+hr {
   margin: var(--space-6) 0 var(--space-4);
   border: 0;
   border-top: var(--border);
@@ -218,10 +206,6 @@ html {
 
 [id] {
   scroll-margin-top: var(--anchor-offset);
-}
-
-:target::before {
-  content: none;
 }
 
 .skip-link {

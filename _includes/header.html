@@ -1,11 +1,11 @@
-<header class="header-section {% if page.cover-img %}has-img{% endif %}{% if page.topic %} topic-{{ page.topic }}{% endif %}">
+<header{% if page.topic %} class="topic-{{ page.topic }}"{% endif %}>
 {% if page.url == '/' %}
 {% assign hero_date_parts = site.data.conference.dates.conference | split: ', ' %}
 {% assign hero_month_days = hero_date_parts[0] %}
 {% assign hero_date_tokens = hero_month_days | split: ' ' %}
 {% assign hero_month = hero_date_tokens[0] %}
 {% assign hero_days = hero_date_tokens[1] %}
-<div class="intro-header home-hero{% if page.cover-img %} home-hero--with-media{% endif %}">
+<div class="intro-header home-hero">
   <div class="home-hero__card">
     <div class="home-hero__content{% if site.data.conference.logo %} home-hero__content--with-logo{% endif %}">
       {% if site.data.conference.logo %}
@@ -36,7 +36,7 @@
   </div>
 </div>
 {% else %}
-<div class="intro-header{% if page.cover-img %} big-img{% endif %}{% if page.url == '/' %} home-hero{% endif %}{% if page.cover-img and page.url != '/' %} decorative-hero{% endif %}"{% if page.cover-img %} style="background-image: url('{{ page.cover-img | relative_url }}');"{% endif %}>
+<div class="intro-header {% if page.cover-img %}decorative-hero{% else %}plain-header{% endif %}"{% if page.cover-img %} style="background-image: url('{{ page.cover-img | relative_url }}');"{% endif %}>
   {% if page.cover-img or page.title %}
   <div class="container-md">
     <div class="row">
@@ -44,7 +44,6 @@
         <div class="page-heading">
           <h1>{% if page.title %}{{ page.title | strip_html }}{% else %}<br/>{% endif %}</h1>
           {% if page.subtitle %}
-            <hr class="small">
             <span class="page-subheading">{{ page.subtitle | strip_html }}</span>
           {% endif %}
         </div>

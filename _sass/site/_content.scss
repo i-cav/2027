@@ -187,10 +187,6 @@ table tr {
   transition: background-color 150ms ease;
 }
 
-table tr:first-child {
-  border-top: 0;
-}
-
 table tbody tr:nth-child(2n) {
   background: rgba(var(--brand-rgb), 0.025);
 }

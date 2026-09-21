@@ -7,7 +7,7 @@ const HeaderParallax = {
     this.beforeCache();
 
     // Shift hero image backgrounds only while visible; requestAnimationFrame keeps scroll work bounded.
-    const headers = Array.from(document.querySelectorAll(".intro-header.big-img"));
+    const headers = Array.from(document.querySelectorAll(".decorative-hero"));
     if (!headers.length || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     let active = true;
@@ -22,11 +22,8 @@ const HeaderParallax = {
         const rect = header.getBoundingClientRect();
         if (rect.bottom < 0 || rect.top > viewportHeight) return;
 
-        // Decorative page heroes are shorter, so they get a lighter background shift.
-        const strength = header.classList.contains("decorative-hero") ? -0.05 : -0.08;
-        const offset = Math.round(rect.top * strength);
-        const basePosition = header.classList.contains("decorative-hero") ? "46%" : "50%";
-        header.style.backgroundPosition = `center calc(${basePosition} + ${offset}px)`;
+        const offset = Math.round(rect.top * -0.05);
+        header.style.backgroundPosition = `center calc(46% + ${offset}px)`;
       });
       ticking = false;
     };

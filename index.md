@@ -46,35 +46,35 @@ cover-img: "/assets/img/kit-royal-tropical-institute.jpg"
   <div class="quick-link-directory__grid">
     <nav class="quick-link-directory__group topic-authors" aria-labelledby="quick-links-authors">
       <h3 id="quick-links-authors">Authors</h3>
-      <div class="quick-links">
-        <a class="button-link" href="{{ '/cfp/' | relative_url }}">Call for Papers</a>
-        <a class="button-link" href="{{ '/cfw/' | relative_url }}">Call for Workshops</a>
-        <a class="button-link" href="{{ '/artifacts/' | relative_url }}">Artifact Evaluation</a>
+      <div class="quick-link-directory__links">
+        <a class="quick-link-directory__link" href="{{ '/cfp/' | relative_url }}">Call for Papers</a>
+        <a class="quick-link-directory__link" href="{{ '/cfw/' | relative_url }}">Call for Workshops</a>
+        <a class="quick-link-directory__link" href="{{ '/artifacts/' | relative_url }}">Artifact Evaluation</a>
       </div>
     </nav>
 
     <nav class="quick-link-directory__group topic-program" aria-labelledby="quick-links-program">
       <h3 id="quick-links-program">Program</h3>
-      <div class="quick-links quick-links--pair">
-        <a class="button-link" href="{{ '/program/' | relative_url }}">Program Overview</a>
-        <a class="button-link" href="{{ '/keynote/' | relative_url }}">Keynotes</a>
+      <div class="quick-link-directory__links">
+        <a class="quick-link-directory__link" href="{{ '/program/' | relative_url }}">Program Overview</a>
+        <a class="quick-link-directory__link" href="{{ '/keynote/' | relative_url }}">Keynotes</a>
       </div>
     </nav>
 
     <nav class="quick-link-directory__group topic-attend" aria-labelledby="quick-links-attend">
       <h3 id="quick-links-attend">Attend</h3>
-      <div class="quick-links">
-        <a class="button-link" href="{{ '/registration/' | relative_url }}">Registration</a>
-        <a class="button-link" href="{{ '/hotels/' | relative_url }}">Hotels</a>
-        <a class="button-link" href="{{ '/venue/' | relative_url }}">Venue</a>
-        <a class="button-link" href="{{ '/amsterdam/' | relative_url }}">Amsterdam</a>
+      <div class="quick-link-directory__links">
+        <a class="quick-link-directory__link" href="{{ '/registration/' | relative_url }}">Registration</a>
+        <a class="quick-link-directory__link" href="{{ '/hotels/' | relative_url }}">Hotels</a>
+        <a class="quick-link-directory__link" href="{{ '/venue/' | relative_url }}">Venue</a>
+        <a class="quick-link-directory__link" href="{{ '/amsterdam/' | relative_url }}">Amsterdam</a>
       </div>
     </nav>
 
     <nav class="quick-link-directory__group topic-organization" aria-labelledby="quick-links-organization">
       <h3 id="quick-links-organization">Organization</h3>
-      <div class="quick-links">
-        <a class="button-link" href="{{ '/organization/' | relative_url }}">Committee</a>
+      <div class="quick-link-directory__links">
+        <a class="quick-link-directory__link" href="{{ '/organization/' | relative_url }}">Committee</a>
       </div>
     </nav>
   </div>
