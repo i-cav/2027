@@ -27,8 +27,6 @@ cover-img: "/assets/img/hero/tulips.jpg"
   <p>Workshops provide a forum for subcommunities to discuss open challenges and recent results in greater depth, explore topics at the boundaries of the main event's interests, or otherwise bring together members within and beyond the CAV community.</p>
 </div>
 
----
-
 ## Workshop Proposals
 
 Proposals will be reviewed by the Workshop Chair, CAV 2027 Program Chairs, and members of the CAV Steering Committee; see the [organization page]({{ "/organization/" | relative_url }}) for the full list.
@@ -63,8 +61,6 @@ Proposals will be evaluated on the following criteria:
 - Degree of overlap with other proposed workshops
 - Past successes of the workshop and association with previous CAV conferences
 - Organizers' ability and experience to lead a successful workshop
-
----
 
 ## Information
 
@@ -102,8 +98,6 @@ Workshop organizers may decide whether to publish workshop proceedings.
 Workshop participants, including organizers, must register via the [CAV main registration page]({{ "/registration/" | relative_url }}).
 The registration rates for workshops will be set by the CAV organizers in consultation with the workshop organizers, following rate structures similar to those used in the past.
 The workshop organizers are strongly encouraged to seek external funding and sponsorships to support invited speakers.
-
----
 
 ## Important Dates
 

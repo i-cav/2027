@@ -29,8 +29,6 @@ cover-img: "/assets/img/hero/amsterdam-canal.jpg"
   </p>
 </div>
 
----
-
 ## Important Dates
 
 <p class="table-note" id="deadline-timezone">All deadlines are at 23:59 AoE (Anywhere on Earth).</p>
