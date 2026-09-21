@@ -76,9 +76,11 @@ cover-img: "/assets/img/hero/amsterdam-canal.jpg"
 
 Note that the artifact registration for tool papers has changed with respect to CAV 2026.
 
+See [Artifact Evaluation]({{ '/artifacts/' | relative_url }}) for artifact registration and submission deadlines.
+
 ## Submission Site
 
-Submissions will be due via HotCRP (exact link TBD)
+Papers will be submitted via HotCRP. The submission link will be added here once available.
 
 ## Scope
 
@@ -121,7 +123,7 @@ Papers can include a clearly marked appendix, however, the reviewers are not obl
 
 Requirements on the artifact evaluation for these categories is described below.
 
-Papers in all categories must be submitted by **January 20, 2027** AoE, and should be in LNCS format. Note [Springer's guidelines regarding AI Authorship](https://www.springer.com/gp/editorial-policies/artificial-intelligence--ai-/25428500). Simultaneous submission to other conferences with proceedings or submission of material that has already been published elsewhere is not allowed.
+Papers in all categories must be submitted by **January 20, 2027** AoE, and should be in [LNCS format](https://link.springer.com/series/558/information-for-authors-and-editors). Note [Springer's guidelines regarding AI Authorship](https://www.springer.com/gp/editorial-policies/artificial-intelligence--ai-/25428500). Simultaneous submission to other conferences with proceedings or submission of material that has already been published elsewhere is not allowed.
 
 ## Camera-Ready Versions
 
@@ -139,6 +141,8 @@ These limits include 2 extra pages to help incorporate reviewer feedback.
 CAV 2027 continues to implement a two-stage reviewing process. In the first stage, each paper will get two reviews. Papers with sufficient support by the reviewers will proceed to the next stage, where they will receive two additional reviews; other papers will be rejected early. Authors whose papers will go into the second stage will have the option to respond to reviewer comments in a rebuttal phase.
 
 ## Artifacts
+
+Artifact registration and submission deadlines are listed on the [Artifact Evaluation]({{ '/artifacts/' | relative_url }}) page.
 
 Authors are encouraged to consult [SIGPLAN's Empirical Evaluation Guidelines](https://www.sigplan.org/Resources/EmpiricalEvaluation/) when reporting on empirical results.
 
