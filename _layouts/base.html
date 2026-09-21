@@ -11,6 +11,7 @@ common-head-js:
   - "/assets/js/vendor/turbo-8.0.23.es2017-esm.js"
 ---
 
+{% assign asset_version = site.time | date: '%s' %}
 <!DOCTYPE html>
 <html lang="{{ page.language | default: site.language | default: 'en' }}">
 <!-- CAV 2027 Jekyll site, adapted from Beautiful Jekyll layouts -->

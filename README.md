@@ -57,3 +57,5 @@ bundle exec jekyll build --future --config _config.yml,_config_ci.yml
 ```
 
 On pushes to `master`, the generated `_site/` directory is uploaded and deployed to GitHub Pages at <https://conferences.i-cav.org/2027/>.
+
+CSS and JavaScript URLs include a shared build timestamp so browsers request fresh assets after a deployment. Turbo tracks the versioned assets in the page head and reloads when navigation reaches a newer build. GitHub Pages can still cache the HTML itself briefly, so a deployment may take a few minutes to become visible.
