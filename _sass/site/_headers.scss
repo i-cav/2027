@@ -19,6 +19,10 @@
   font-size: var(--font-size-page-title);
 }
 
+.intro-header .heading-permalink__indicator {
+  color: inherit;
+}
+
 .intro-header .page-subheading {
   @include ui-text(1.3rem, 600, 1.3);
   display: block;

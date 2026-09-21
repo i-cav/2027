@@ -144,19 +144,21 @@ const BootstrapNavState = {
 
 const HeadingPermalinks = {
   afterLoad() {
-    document.querySelectorAll(".page-content-card :is(h1, h2, h3, h4, h5, h6)[id]").forEach((heading) => {
+    document.querySelectorAll(".intro-header h1, .page-content-card :is(h1, h2, h3, h4, h5, h6)[id]").forEach((heading) => {
       // Both initial load events and Turbo's cached pages can contain these links already.
       if (heading.querySelector(".heading-permalink")) return;
 
+      const isPageTitle = heading.matches(".intro-header h1");
+      const destination = isPageTitle ? "page" : "section";
       const link = document.createElement("a");
       link.className = "heading-permalink";
-      link.href = `#${encodeURIComponent(heading.id)}`;
-      link.setAttribute("data-turbo", "false");
-      link.title = "Link to this section";
+      link.href = isPageTitle ? window.location.href.split("#")[0] : `#${encodeURIComponent(heading.id)}`;
+      if (!isPageTitle) link.setAttribute("data-turbo", "false");
+      link.title = `Link to this ${destination}`;
 
       // Preserve any existing controls instead of nesting them inside another link.
       if (heading.querySelector("a, button, input, select, textarea")) {
-        link.setAttribute("aria-label", `Link to section: ${heading.textContent.trim()}`);
+        link.setAttribute("aria-label", `Link to ${destination}: ${heading.textContent.trim()}`);
       } else {
         link.append(...heading.childNodes);
       }
@@ -174,7 +176,7 @@ const HeadingPermalinks = {
   updateCurrent() {
     // Turbo changes the URL with the History API, which does not update CSS :target.
     document.querySelectorAll(".heading-permalink").forEach((link) => {
-      if (link.hash === window.location.hash) {
+      if (link.hash && link.hash === window.location.hash) {
         link.setAttribute("aria-current", "location");
       } else {
         link.removeAttribute("aria-current");
