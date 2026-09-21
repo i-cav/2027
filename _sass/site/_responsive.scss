@@ -154,14 +154,14 @@
   }
 
   .decorative-hero__track {
-    --hero-sticky-hold: 8rem;
+    --hero-sticky-hold: 10rem;
 
     left: 30%;
   }
 
   .decorative-hero__media {
-    --hero-parallax-rate: 0.3;
-    --hero-parallax-limit: 200px;
+    --hero-parallax-rate: 0.4;
+    --hero-parallax-limit: 260px;
   }
 
   .decorative-hero__photo[src*="wooden-clogs"] {

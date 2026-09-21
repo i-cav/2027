@@ -49,8 +49,8 @@
 }
 
 .hero-parallax-photo {
-  --hero-parallax-rate: 0.18;
-  --hero-parallax-limit: 48px;
+  --hero-parallax-rate: 0.24;
+  --hero-parallax-limit: 64px;
 
   position: absolute;
   top: 0;
@@ -63,8 +63,8 @@
 
 @media (max-width: 767.98px) {
   .hero-parallax-photo {
-    --hero-parallax-rate: 0.12;
-    --hero-parallax-limit: 24px;
+    --hero-parallax-rate: 0.16;
+    --hero-parallax-limit: 32px;
   }
 }
 
@@ -82,7 +82,7 @@
 
 // Extend the photo below the heading so it fades behind the page content.
 .decorative-hero__track {
-  --hero-sticky-hold: 30rem;
+  --hero-sticky-hold: 36rem;
 
   position: absolute;
   inset: 0 0 calc(-1 * var(--hero-image-extension)) 35%;
@@ -90,7 +90,7 @@
 }
 
 .decorative-hero__media {
-  --hero-parallax-rate: 0.55;
+  --hero-parallax-rate: 0.65;
   --hero-parallax-limit: 720px;
 
   position: absolute;
@@ -218,12 +218,13 @@
 }
 
 .decorative-hero__photo[src*="kit-royal-tropical-institute"] {
-  object-position: center 40%;
+  // Bring more of the facade and entrance into the visible part of the hero.
+  object-position: center 65%;
 }
 
 .decorative-hero__photo[src*="amsterdam-westerkerk"] {
-  // Keep the tower clear of the title in the narrower mobile crop.
-  object-position: 25% 20%;
+  // Prioritize the canal and boats at the bottom of the photo over the crown.
+  object-position: 25% bottom;
 }
 
 .decorative-hero__photo[src*="singel-evening"] {
