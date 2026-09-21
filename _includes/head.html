@@ -51,6 +51,7 @@
   <meta name="theme-color" content="#123247" media="(prefers-color-scheme: dark)">
   {% assign turbo_root = site.baseurl | default: '' | append: '/' | replace: '//', '/' %}
   <meta name="turbo-root" content="{{ turbo_root }}">
+  <meta name="view-transition" content="same-origin">
 
   {% if page.cover-img %}
     <link rel="preload" as="image" href="{{ page.cover-img | relative_url }}" fetchpriority="high">

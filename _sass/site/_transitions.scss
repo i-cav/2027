@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Page Transitions
+   ========================================================================== */
+
+:root {
+  // Override Bootstrap's smooth scrolling so Turbo captures the final scroll
+  // position, and same-page anchors remain immediate.
+  scroll-behavior: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  // Capture navigation separately so it stays opaque while the page crossfades.
+  .navbar-custom {
+    view-transition-name: site-navigation;
+  }
+
+  ::view-transition-group(root),
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 180ms;
+    animation-timing-function: ease-out;
+  }
+
+  ::view-transition-group(site-navigation) {
+    z-index: 1;
+    animation: none;
+  }
+
+  ::view-transition-old(site-navigation) {
+    display: none;
+  }
+
+  // Use the destination navigation immediately, including its active link.
+  ::view-transition-new(site-navigation) {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+// Turbo skips transitions for reduced motion; also stop an in-flight animation
+// if the preference changes while navigating.
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

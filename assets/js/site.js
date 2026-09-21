@@ -138,6 +138,8 @@ const beforeCache = () => {
 };
 
 document.addEventListener("DOMContentLoaded", afterLoad);
+// Finalize heading layout before Turbo captures the incoming page transition.
+document.addEventListener("turbo:render", () => HeadingPermalinks.afterLoad());
 document.addEventListener("turbo:load", afterLoad);
 document.addEventListener("turbo:before-cache", beforeCache);
 window.addEventListener("hashchange", () => HeadingPermalinks.updateCurrent());
