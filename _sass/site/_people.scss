@@ -79,7 +79,9 @@
 }
 
 .organizer-person__name:hover,
-.organizer-person__name:focus {
+.organizer-person__name:focus,
+.organizer-person__photo-link:is(:hover, :focus) + .organizer-person__details .organizer-person__name {
+  color: var(--accent-dark);
   @include inline-underline;
 }
 
