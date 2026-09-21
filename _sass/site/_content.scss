@@ -164,33 +164,48 @@ footer .footer-signature__content .footer-links {
 
 table {
   width: 100%;
+  max-width: 42rem;
+  margin-inline: auto;
   border: 0;
   border-radius: 0;
   border-collapse: collapse;
   font-family: var(--header-font);
+  font-size: var(--font-size-ui);
+  font-variant-numeric: tabular-nums;
   table-layout: fixed;
+}
+
+.table-note {
+  @include ui-text(var(--font-size-sm), 400, 1.5);
+  color: var(--muted);
 }
 
 table tr {
   margin: 0;
   padding: 0;
   background: transparent;
+  transition: background-color 150ms ease;
 }
 
 table tr:first-child {
   border-top: 0;
 }
 
-table tr:nth-child(2n) {
-  background: transparent;
+table tbody tr:nth-child(2n) {
+  background: rgba(var(--brand-rgb), 0.025);
+}
+
+table tbody tr:hover,
+table tbody tr:focus-within {
+  background: rgba(var(--brand-rgb), 0.06);
 }
 
 table th,
 table td {
   margin: 0;
-  padding: var(--space-2) 0;
+  padding: var(--space-3) var(--space-2);
   border: 0;
-  line-height: var(--line-snug);
+  line-height: 1.45;
   text-align: left;
   vertical-align: top;
 }
@@ -210,17 +225,17 @@ table td + td {
 
 table th:first-child,
 table td:first-child {
-  width: 38%;
+  width: 46%;
 }
 
 table td:first-child {
   color: var(--brand);
-  font-weight: 800;
+  font-weight: 600;
 }
 
 table td:not(:first-child) {
   color: var(--text);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 code {

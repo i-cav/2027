@@ -33,45 +33,45 @@ cover-img: "/assets/img/hero/amsterdam-canal.jpg"
 
 ## Important Dates
 
-All deadlines are AoE (Anywhere on Earth) and in 2027.
+<p class="table-note" id="deadline-timezone">All deadlines are at 23:59 AoE (Anywhere on Earth).</p>
 
-<table>
+<table aria-labelledby="important-dates" aria-describedby="deadline-timezone">
   <tbody>
     <tr>
       <td>Full papers due</td>
-      <td>{% include deadline-date.html utc="2027-01-21T11:59:00Z" label="Wednesday, 20 January 2027, 23:59 AoE" %}</td>
+      <td>{% include deadline-date.html utc="2027-01-21T11:59:00Z" label="Wed, 20 Jan 2027" original="Wednesday, 20 January 2027, 23:59 AoE" %}</td>
     </tr>
     <tr>
       <td>Early rejection notification</td>
-      <td>Thursday, 4 March 2027</td>
+      <td><time datetime="2027-03-04">Thu, 4 Mar 2027</time></td>
     </tr>
     <tr>
       <td>Artifact registration (tool papers)</td>
-      <td>{% include deadline-date.html utc="2027-03-09T11:59:00Z" label="Monday, 8 March 2027, 23:59 AoE" %}</td>
+      <td>{% include deadline-date.html utc="2027-03-09T11:59:00Z" label="Mon, 8 Mar 2027" original="Monday, 8 March 2027, 23:59 AoE" %}</td>
     </tr>
     <tr>
       <td>Author response period</td>
-      <td>{% include deadline-date.html utc="2027-04-09T11:59:00Z" label="Monday, 5 April 2027 &ndash; Thursday, 8 April 2027, 23:59 AoE" original="Monday, 5 April 2027 - Thursday, 8 April 2027, 23:59 AoE" range=true %}</td>
+      <td>{% include deadline-date.html utc="2027-04-09T11:59:00Z" label="Mon, 5 &ndash; Thu, 8 Apr 2027" original="Monday, 5 April 2027 - Thursday, 8 April 2027, 23:59 AoE" range=true %}</td>
     </tr>
     <tr>
       <td>Author notification</td>
-      <td>Friday, 23 April 2027</td>
+      <td><time datetime="2027-04-23">Fri, 23 Apr 2027</time></td>
     </tr>
     <tr>
       <td>Artifact registration (non-tool papers)</td>
-      <td>{% include deadline-date.html utc="2027-04-27T11:59:00Z" label="Monday, 26 April 2027, 23:59 AoE" %}</td>
+      <td>{% include deadline-date.html utc="2027-04-27T11:59:00Z" label="Mon, 26 Apr 2027" original="Monday, 26 April 2027, 23:59 AoE" %}</td>
     </tr>
     <tr>
       <td>Camera-ready deadline</td>
-      <td>{% include deadline-date.html utc="2027-05-19T11:59:00Z" label="Tuesday, 18 May 2027, 23:59 AoE" %}</td>
+      <td>{% include deadline-date.html utc="2027-05-19T11:59:00Z" label="Tue, 18 May 2027" original="Tuesday, 18 May 2027, 23:59 AoE" %}</td>
     </tr>
     <tr>
       <td>Early registration deadline</td>
-      <td>{% include deadline-date.html utc="2027-05-19T11:59:00Z" label="Tuesday, 18 May 2027, 23:59 AoE" %}</td>
+      <td>{% include deadline-date.html utc="2027-05-19T11:59:00Z" label="Tue, 18 May 2027" original="Tuesday, 18 May 2027, 23:59 AoE" %}</td>
     </tr>
     <tr>
       <td>Conference (including workshops)</td>
-      <td>Monday, 19 July 2027 &ndash; Friday, 23 July 2027, Amsterdam</td>
+      <td><time datetime="2027-07-19">Mon, 19</time> &ndash; <time datetime="2027-07-23">Fri, 23 Jul 2027</time>, Amsterdam</td>
     </tr>
   </tbody>
 </table>

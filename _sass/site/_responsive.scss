@@ -253,25 +253,9 @@
   .organizer-person--photo {
     --avatar-size: 4rem;
   }
-
-  table {
-    display: block;
-    overflow-x: auto;
-    width: max-content;
-    max-width: 100%;
-  }
 }
 
 @media (max-width: 520px) {
-  table {
-    table-layout: auto;
-  }
-
-  table th:first-child,
-  table td:first-child {
-    width: auto;
-  }
-
   .quick-links {
     grid-template-columns: 1fr;
   }
