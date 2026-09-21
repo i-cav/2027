@@ -29,7 +29,6 @@ cover-img: "/assets/img/kit-royal-tropical-institute.jpg"
       <span class="important-dates__label">Submission deadline</span>
       <span class="important-dates__value">
         <span class="important-dates__date">Wednesday, 20 January 2027</span>
-        <span class="important-dates__note">Full call coming soon</span>
       </span>
     </a>
     <a class="important-dates__item topic-authors" href="{{ '/cfp/' | relative_url }}">
