@@ -145,7 +145,49 @@ const BootstrapNavState = {
   }
 };
 
+const HeadingPermalinks = {
+  afterLoad() {
+    document.querySelectorAll(".page-content-card :is(h1, h2, h3, h4, h5, h6)[id]").forEach((heading) => {
+      // Both initial load events and Turbo's cached pages can contain these links already.
+      if (heading.querySelector(".heading-permalink")) return;
+
+      const link = document.createElement("a");
+      link.className = "heading-permalink";
+      link.href = `#${encodeURIComponent(heading.id)}`;
+      link.setAttribute("data-turbo", "false");
+      link.title = "Link to this section";
+
+      // Preserve any existing controls instead of nesting them inside another link.
+      if (heading.querySelector("a, button, input, select, textarea")) {
+        link.setAttribute("aria-label", `Link to section: ${heading.textContent.trim()}`);
+      } else {
+        link.append(...heading.childNodes);
+      }
+
+      const indicator = document.createElement("span");
+      indicator.className = "heading-permalink__indicator";
+      indicator.setAttribute("aria-hidden", "true");
+      indicator.textContent = "\u00a0#";
+      link.append(indicator);
+      heading.append(link);
+    });
+    this.updateCurrent();
+  },
+
+  updateCurrent() {
+    // Turbo changes the URL with the History API, which does not update CSS :target.
+    document.querySelectorAll(".heading-permalink").forEach((link) => {
+      if (link.hash === window.location.hash) {
+        link.setAttribute("aria-current", "location");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  }
+};
+
 const afterLoad = () => {
+  HeadingPermalinks.afterLoad();
   HeaderParallax.afterLoad();
   DeadlinePopovers.afterLoad();
   BootstrapTooltips.afterLoad();
@@ -161,3 +203,4 @@ const beforeCache = () => {
 document.addEventListener("DOMContentLoaded", afterLoad);
 document.addEventListener("turbo:load", afterLoad);
 document.addEventListener("turbo:before-cache", beforeCache);
+window.addEventListener("hashchange", () => HeadingPermalinks.updateCurrent());

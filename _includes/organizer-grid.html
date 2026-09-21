@@ -17,7 +17,7 @@
 {% for role in organizer_roles %}
   {% unless role.featured %}
   <section class="organizer-role">
-    <h{{ organizer_heading_level }} class="organizer-role__title">{{ role.title }}</h{{ organizer_heading_level }}>
+    <h{{ organizer_heading_level }} class="organizer-role__title" id="{{ role.title | slugify }}">{{ role.title }}</h{{ organizer_heading_level }}>
     <ul class="organizer-list">
     {% for person in role.people %}
       {% include organizer-person.html person=person %}

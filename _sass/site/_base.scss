@@ -143,6 +143,25 @@ h4 {
   font-size: var(--font-size-h4);
 }
 
+.heading-permalink,
+.heading-permalink:hover,
+.heading-permalink:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.heading-permalink__indicator {
+  color: var(--brand-link);
+  font-size: 0.8em;
+  font-weight: 600;
+  opacity: 0;
+}
+
+:is(h1, h2, h3, h4, h5, h6):is(:hover, :focus-within) .heading-permalink__indicator,
+.heading-permalink[aria-current="location"] .heading-permalink__indicator {
+  opacity: 1;
+}
+
 a {
   color: var(--brand-link);
 }
