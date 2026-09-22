@@ -125,6 +125,9 @@ Requirements on the artifact evaluation for these categories is described below.
 
 Papers in all categories must be submitted by **January 20, 2027** AoE, and should be in [LNCS format](https://link.springer.com/series/558/information-for-authors-and-editors). Note [Springer's guidelines regarding AI Authorship](https://www.springer.com/gp/editorial-policies/artificial-intelligence--ai-/25428500). Simultaneous submission to other conferences with proceedings or submission of material that has already been published elsewhere is not allowed.
 
+The number of submissions per author is limited to 5 (five).
+This refers to the total number of paper submissions over all three paper categories.
+
 ## Camera-Ready Versions
 
 Detailed instructions will be provided by mail to authors of accepted papers.
