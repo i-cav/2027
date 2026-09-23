@@ -339,7 +339,7 @@
 .callout__label {
   @include ui-text(var(--font-size-xs), 800, var(--line-snug));
   display: block;
-  margin-bottom: var(--space-2);
+  margin: 0 0 var(--space-2);
   color: var(--muted);
   letter-spacing: 0.03em;
   text-transform: uppercase;
