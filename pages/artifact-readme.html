@@ -1,0 +1,39 @@
+---
+layout: page
+title: Example Artifact README
+permalink: /artifacts/readme/
+topic: authors
+share-description: Preview, copy, or download the CAV 2027 artifact README template.
+---
+
+{% capture artifact_readme %}{% include artifact-readme.md %}{% endcapture %}
+
+<p><a href="{{ '/artifacts/#packaging-guidelines' | relative_url }}">Back to the artifact packaging guidelines</a></p>
+<p>Replace the placeholders and adapt this template to your artifact.</p>
+
+<div class="artifact-readme">
+  <div class="d-flex flex-wrap align-items-center gap-3 mb-4" role="group" aria-label="README actions">
+    <button class="button-link" type="button" data-copy-artifact-readme hidden>Copy Markdown</button>
+    <a class="button-link" href="{{ '/assets/files/artifact-readme.md' | relative_url }}" download="README.md" data-turbo="false">Download README.md</a>
+    <span class="small" role="status" data-artifact-readme-status></span>
+  </div>
+
+  <ul class="nav nav-tabs mb-4" role="tablist" aria-label="README view">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="readme-preview-tab" data-bs-toggle="tab" data-bs-target="#readme-preview" type="button" role="tab" aria-controls="readme-preview" aria-selected="true">Preview</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="readme-markdown-tab" data-bs-toggle="tab" data-bs-target="#readme-markdown" type="button" role="tab" aria-controls="readme-markdown" aria-selected="false">Markdown</button>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active artifact-readme__preview" id="readme-preview" role="tabpanel" aria-labelledby="readme-preview-tab" tabindex="0">
+      {{ artifact_readme | markdownify }}
+    </div>
+    <div class="tab-pane" id="readme-markdown" role="tabpanel" aria-labelledby="readme-markdown-tab" tabindex="0">
+      {% highlight markdown %}{{ artifact_readme }}{% endhighlight %}
+    </div>
+  </div>
+  <textarea data-artifact-readme-source hidden>{{ artifact_readme | escape }}</textarea>
+</div>

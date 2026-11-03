@@ -1,7 +1,7 @@
 {% assign organizer_roles = include.roles | default: site.data.organizers.roles %}
 {% assign organizer_heading_level = include.heading_level | default: 2 %}
 {% for role in organizer_roles %}
-  {% if role.featured %}
+  {% if role.featured or include.featured %}
   <section class="organizer-featured" aria-labelledby="organizer-featured-{{ forloop.index }}">
     <h{{ organizer_heading_level }} class="organizer-role__title" id="organizer-featured-{{ forloop.index }}">{{ include.featured_title | default: role.title }}</h{{ organizer_heading_level }}>
     <ul class="organizer-list organizer-featured__list">
@@ -15,7 +15,7 @@
 
 <div class="organizer-grid">
 {% for role in organizer_roles %}
-  {% unless role.featured %}
+  {% unless role.featured or include.featured %}
   <section class="organizer-role">
     <h{{ organizer_heading_level }} class="organizer-role__title" id="{{ role.title | slugify }}">{{ role.title }}</h{{ organizer_heading_level }}>
     <ul class="organizer-list">

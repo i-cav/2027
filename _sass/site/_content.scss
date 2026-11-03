@@ -266,3 +266,45 @@ pre code {
 .highlight pre {
   margin: 0;
 }
+
+/* Artifact README preview and Markdown source. */
+.artifact-readme .nav-tabs {
+  --bs-nav-link-color: var(--brand-link);
+  --bs-nav-link-hover-color: var(--brand-link-dark);
+  --bs-nav-tabs-link-active-color: var(--brand);
+  font-family: var(--header-font);
+  font-size: var(--font-size-ui);
+}
+
+.artifact-readme__preview table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  table-layout: auto;
+}
+
+.artifact-readme__preview :is(th, td):first-child {
+  width: auto;
+}
+
+.artifact-readme .highlight :is(.c, .c1, .cm) {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.artifact-readme .highlight :is(.gh, .gu, .k, .nb) {
+  color: var(--brand-2);
+  font-weight: 700;
+}
+
+.artifact-readme .highlight :is(.s, .s1, .s2, .sb, .nv) {
+  color: var(--accent-strong);
+}
+
+.artifact-readme .highlight .gs {
+  font-weight: 700;
+}
+
+.artifact-readme .highlight .ge {
+  font-style: italic;
+}

@@ -125,17 +125,55 @@ const HeadingPermalinks = {
   }
 };
 
+const ArtifactReadme = {
+  afterLoad() {
+    const button = document.querySelector("[data-copy-artifact-readme]");
+    if (button) button.hidden = !navigator.clipboard?.writeText;
+  },
+
+  async copy(button) {
+    const source = document.querySelector("[data-artifact-readme-source]");
+    const status = document.querySelector("[data-artifact-readme-status]");
+    if (!source || !status) return;
+
+    button.disabled = true;
+    status.textContent = "";
+    try {
+      await navigator.clipboard.writeText(source.value);
+      status.textContent = "Markdown copied.";
+    } catch {
+      status.textContent = "Could not copy. Use Download README.md instead.";
+    } finally {
+      button.disabled = false;
+    }
+  },
+
+  beforeCache() {
+    const button = document.querySelector("[data-copy-artifact-readme]");
+    if (button) button.disabled = false;
+    const status = document.querySelector("[data-artifact-readme-status]");
+    if (status) status.textContent = "";
+  }
+};
+
 const afterLoad = () => {
   HeadingPermalinks.afterLoad();
   DeadlinePopovers.afterLoad();
   BootstrapTooltips.afterLoad();
+  ArtifactReadme.afterLoad();
 };
 
 const beforeCache = () => {
   DeadlinePopovers.beforeCache();
   BootstrapTooltips.beforeCache();
   BootstrapNavState.beforeCache();
+  ArtifactReadme.beforeCache();
 };
+
+document.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-copy-artifact-readme]");
+  if (button) ArtifactReadme.copy(button);
+});
 
 document.addEventListener("DOMContentLoaded", afterLoad);
 // Finalize heading layout before Turbo captures the incoming page transition.
