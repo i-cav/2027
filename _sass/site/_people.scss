@@ -11,6 +11,50 @@
   gap: var(--space-7);
 }
 
+.keynote-grid {
+  display: grid;
+  gap: var(--space-6);
+  margin: var(--space-7) 0;
+}
+
+.keynote-speaker {
+  display: grid;
+  grid-template-columns: minmax(0, 12rem) minmax(0, 1fr);
+  gap: var(--space-6);
+  min-width: 0;
+}
+
+.keynote-speaker__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 6 / 7;
+  object-fit: cover;
+  border-radius: var(--radius);
+  background: var(--surface-soft);
+}
+
+.keynote-speaker__photo--placeholder {
+  border: var(--border);
+}
+
+.keynote-speaker h2 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--font-size-h4);
+}
+
+.keynote-speaker__affiliation {
+  @include ui-text(var(--font-size-sm), 600, var(--line-snug));
+  color: var(--muted);
+}
+
+.keynote-speaker__photo-credit {
+  @include ui-text(var(--font-size-xs), 400, var(--line-snug));
+  display: block;
+  margin-top: var(--space-1);
+  color: var(--muted);
+}
+
 .legal-provider {
   margin: var(--space-6) 0 0;
   padding-top: var(--space-6);

@@ -11,3 +11,8 @@ The hero images in this directory are self-hosted copies of public-domain or CC0
 - `wooden-clogs.jpg`: Wooden Shoes (48843382296).jpg, Joe deSousa / Mustang Joe, CC0 1.0. Source: https://commons.wikimedia.org/wiki/File:Wooden_Shoes_(48843382296).jpg. License: https://creativecommons.org/publicdomain/zero/1.0/. Resized to 1693 × 2400 pixels; used on Artifact Evaluation.
 - `gouda-wheels.jpg`: Diverse kazen in Gouda.jpg, Gouwenaar, released into the public domain by the photographer. Source: https://commons.wikimedia.org/wiki/File:Diverse_kazen_in_Gouda.jpg. Resized to 1920 × 1440 pixels; used on Sponsors.
 - `tulips.jpg`: Keukenhof (7669851).jpg, U.S. Army photo by Sgt. 1st Class Chad Menegay, public domain. Source: https://commons.wikimedia.org/wiki/File:Keukenhof_(7669851).jpg
+- `amsterdam-canal-houses.jpg`: Amsterdam Canal Houses (Unsplash).jpg, Kaci Baum, CC0 1.0.
+  Source: https://commons.wikimedia.org/wiki/File:Amsterdam_Canal_Houses_(Unsplash).jpg.
+  License: https://creativecommons.org/publicdomain/zero/1.0/.
+  Downloaded as a 1920 × 1282 pixel Wikimedia thumbnail; used on Keynotes.
+  Wikimedia records its original Unsplash publication on 24 May 2017, before Unsplash changed its license.

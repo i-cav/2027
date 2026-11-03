@@ -113,6 +113,19 @@
 }
 
 @media (max-width: 767px) {
+  .keynote-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-7);
+  }
+
+  .keynote-speaker {
+    grid-template-columns: 1fr;
+  }
+
+  .keynote-speaker__photo {
+    max-width: 15rem;
+  }
+
   h2 {
     margin-top: var(--space-7);
   }

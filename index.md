@@ -6,6 +6,11 @@ cover-img: "/assets/img/kit-royal-tropical-institute.jpg"
 ---
 {% include homepage-cta.html %}
 
+<section class="callout" aria-labelledby="keynote-announcement-heading">
+  <span class="callout__label" id="keynote-announcement-heading">Keynote speakers</span>
+  <p>We're pleased to announce {% for speaker in site.data.keynotes %}{% if forloop.last and forloop.length > 1 %} and {% elsif forloop.first == false %}, {% endif %}{{ speaker.name }}{% endfor %} as our <a href="{{ '/keynotes/' | relative_url }}">keynote speakers</a>.</p>
+</section>
+
 <div class="lead-copy">
   <p>CAV 2027 is the 39th edition of CAV, and takes place&mdash;for the first time ever&mdash;in the Netherlands.</p>
   <p>The conference spans theoretical results, algorithms, implementation techniques, and concrete applications, with a strong emphasis on practical verification tools.</p>
@@ -57,7 +62,7 @@ cover-img: "/assets/img/kit-royal-tropical-institute.jpg"
       <h3 id="quick-links-program">Program</h3>
       <div class="quick-link-directory__links">
         <a class="quick-link-directory__link" href="{{ '/program/' | relative_url }}">Program Overview</a>
-        <a class="quick-link-directory__link" href="{{ '/keynote/' | relative_url }}">Keynotes</a>
+        <a class="quick-link-directory__link" href="{{ '/keynotes/' | relative_url }}">Keynotes</a>
       </div>
     </nav>
 

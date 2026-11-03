@@ -1,0 +1,17 @@
+- id: anne-kathrin-schmuck
+  name: Anne-Kathrin Schmuck
+  affiliation: Max Planck Institute for Software Systems (MPI-SWS)
+  url: https://wp.mpi-sws.org/akschmuck/
+  photo: /assets/img/keynotes/anne-kathrin-schmuck.jpg
+  teaser: >-
+    Feedback control has long driven performant and reliable adaptation in engineered systems.
+    Recent agentic AI systems adapt without control, gaining impressive performance without reliability.
+    Are formal methods ready to close the loop?
+- id: dino-distefano
+  name: Dino Distefano
+  affiliation: Anthropic & Queen Mary University of London
+  url: https://ddino.github.io/
+- id: marijn-heule
+  name: Marijn Heule
+  affiliation: Carnegie Mellon University
+  url: https://www.cs.cmu.edu/~mheule/

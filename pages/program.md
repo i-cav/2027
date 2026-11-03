@@ -57,11 +57,12 @@ cover-img: "/assets/img/hero/zaanse-windmills.jpg"
 
 <section class="program-overview" aria-labelledby="program-details-heading">
   <h2 id="program-details-heading">Program Details</h2>
-  <p>Keynote speaker information and accepted papers will be published on dedicated pages as they become available.</p>
+  <p>Our three keynote speakers have been announced; meet them on the <a href="{{ '/keynotes/' | relative_url }}">keynotes page</a>.</p>
+  <p>Accepted papers will be published on a dedicated page as they become available.</p>
   <nav class="page-related-links" aria-label="Program pages">
     <span class="page-related-links__label">See also:</span>
     <ul class="page-related-links__list" role="list">
-      <li class="page-related-links__item"><a href="{{ '/keynote/' | relative_url }}">Keynotes</a></li>
+      <li class="page-related-links__item"><a href="{{ '/keynotes/' | relative_url }}">Keynotes</a></li>
       <li class="page-related-links__item"><a href="{{ '/accepted/' | relative_url }}">Accepted Papers</a></li>
     </ul>
   </nav>

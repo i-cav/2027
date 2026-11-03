@@ -15,7 +15,7 @@ navbar-links:
     - Artifact Evaluation: "/artifacts/"
   Program:
     - Overview: "/program/"
-    - Keynotes: "/keynote/"
+    - Keynotes: "/keynotes/"
     - Accepted Papers: "/accepted/"
     - Proceedings: "/proceedings/"
     - CAV Award: "/award/"
@@ -51,9 +51,10 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - TODO.md
   - docs/
   - vendor/
+  - assets/img/keynotes/dino-distefano.jpg
+  - assets/img/keynotes/marijn-heule.jpg
 
 plugins:
   - jekyll-sitemap
