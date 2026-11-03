@@ -3,10 +3,6 @@
 
     <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
         {%- for link in site.navbar-links -%}
@@ -38,6 +34,12 @@
         {%- endfor -%}
       </ul>
     </div>
+
+    <pagefind-modal-trigger class="site-search-toggle" placeholder="Search" hide-shortcut></pagefind-modal-trigger>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
   </div>
 </nav>

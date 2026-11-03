@@ -3,12 +3,14 @@ common-css:
   - "/assets/css/vendor/bootstrap-5.3.8.min.css"
   - "/assets/css/vendor/fontawesome-6.5.2.min.css"
   - "/assets/css/vendor/fonts.css"
+  - "/pagefind/pagefind-component-ui.css"
   - "/assets/css/site.css"
 common-js:
   - "/assets/js/vendor/bootstrap-5.3.8.bundle.min.js"
   - "/assets/js/site.js"
 common-head-js:
   - "/assets/js/vendor/turbo-8.0.23.es2017-esm.js"
+  - "/pagefind/pagefind-component-ui.js"
 ---
 
 {% assign asset_version = site.time | date: '%s' %}
@@ -21,6 +23,7 @@ common-head-js:
   <a class="skip-link" href="#main-content" data-turbo="false">Skip to main content</a>
 
   {% include nav.html %}
+  {% include search.html %}
 
   <noscript>
     <div class="browser-support-warning" role="status">

@@ -8,6 +8,8 @@ Runtime assets are served locally. Bootstrap, Font Awesome, and generated font-f
 
 Use Ruby 3.3 or newer. On macOS, make sure a current Ruby from Homebrew, asdf, rbenv, or a similar tool appears before `/usr/bin` on `PATH`; the system Ruby is too old for this setup.
 
+Node.js and npm are also required to generate the search assets.
+
 Install Ruby dependencies:
 
 ```sh
@@ -27,6 +29,9 @@ bundle exec jekyll serve --future
 ```
 
 The local server is usually available at `http://127.0.0.1:4000/2027/`.
+
+The `_plugins/pagefind.rb` hook generates the Pagefind index after every Jekyll build, including rebuilds during `jekyll serve`.
+Search uses the generated index in `_site/pagefind/` and runs entirely in the browser.
 
 ## Content
 
@@ -55,6 +60,8 @@ The GitHub Actions workflow installs the Gemfile dependencies with Bundler and b
 ```sh
 bundle exec jekyll build --future --config _config.yml,_config_ci.yml
 ```
+
+The Pagefind hook indexes the rendered content and adds the search assets before the deployment artifact is uploaded.
 
 On pushes to `master`, the generated `_site/` directory is uploaded and deployed to GitHub Pages at <https://conferences.i-cav.org/2027/>.
 

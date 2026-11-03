@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Site Search
+   ========================================================================== */
+
+body {
+  --pf-text: var(--text);
+  --pf-text-secondary: var(--text-soft);
+  --pf-text-muted: var(--muted);
+  --pf-background: var(--surface);
+  --pf-border: var(--rule);
+  --pf-border-focus: var(--rule-strong);
+  --pf-hover: var(--surface-soft);
+  --pf-mark: var(--brand-link);
+  --pf-skeleton: var(--surface-muted);
+  --pf-skeleton-shine: var(--surface-soft);
+  --pf-font: var(--body-font);
+  --pf-border-radius: var(--radius);
+  --pf-input-height: var(--control-height);
+  --pf-input-font-size: var(--font-size-base);
+  --pf-summary-font-size: var(--font-size-sm);
+  --pf-result-title-font-size: var(--font-size-lead);
+  --pf-result-excerpt-font-size: var(--font-size-base);
+  --pf-outline-focus: var(--accent-strong);
+  --pf-outline-width: 3px;
+  --pf-outline-offset: 2px;
+  --pf-modal-max-width: 42rem;
+  --pf-modal-max-height: min(80dvh, 50rem);
+  --pf-modal-backdrop: rgba(var(--brand-rgb), 0.55);
+  --pf-shadow-lg: var(--shadow);
+}
+
+.navbar-custom .navbar-collapse {
+  order: 1;
+}
+
+.navbar-custom .site-search-toggle {
+  --pf-background: transparent;
+  --pf-text-muted: var(--brand);
+
+  display: inline-block;
+  order: 2;
+  margin-left: var(--space-3);
+}
+
+.navbar-custom .site-search-toggle:not(:defined) {
+  display: none;
+}
+
+.navbar-custom .site-search-toggle:hover {
+  --pf-background: var(--surface-soft);
+  --pf-border-focus: var(--brand-link-dark);
+  --pf-text-muted: var(--brand-link-dark);
+}
+
+/* Pagefind gives its controls high specificity; these overrides match the navbar. */
+.navbar-custom .site-search-toggle .pf-trigger-btn {
+  font: 700 var(--font-size-ui) / 1.25 var(--header-font) !important;
+}
+
+.navbar-custom .navbar-toggler {
+  order: 3;
+}
+
+.site-search .pf-modal-close {
+  display: flex !important;
+}
+
+html:has(.pf-modal[open]) {
+  overflow: hidden;
+}
+
+@media (max-width: 1199px) {
+  .navbar-custom .site-search-toggle {
+    margin-left: auto;
+  }
+
+  .navbar-custom .navbar-toggler {
+    margin-left: var(--space-2);
+  }
+}

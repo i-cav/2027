@@ -1,4 +1,4 @@
-<header{% if page.topic %} class="topic-{{ page.topic }}"{% endif %}>
+<header{% unless page.search == false %} data-pagefind-body{% endunless %}{% if page.topic %} class="topic-{{ page.topic }}"{% endif %}>
 {% if page.url == '/' %}
 {% assign hero_date_parts = site.data.conference.dates.conference | split: ', ' %}
 {% assign hero_month_days = hero_date_parts[0] %}
@@ -14,7 +14,7 @@
         </div>
       {% endif %}
       <div class="home-hero__text">
-        <h1>{{ site.data.conference.full_name | strip_html }}</h1>
+        <h1 data-pagefind-meta="title">{{ site.data.conference.full_name | strip_html }}</h1>
         <p class="home-hero__tagline">The flagship conference dedicated to advancing the theory and practice of computer-aided formal analysis methods for hardware and software systems.</p>
         <div class="home-hero__dateline" aria-label="Conference date and location">
           <a class="home-hero__date" href="{{ '/program/' | relative_url }}">
@@ -50,7 +50,7 @@
       <div class="col-12 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="page-heading">
           <p class="page-heading__conference">{{ site.data.conference.name | escape }}</p>
-          <h1>{% if page.title %}{{ page.title | strip_html }}{% else %}<br/>{% endif %}</h1>
+          <h1 data-pagefind-meta="title">{% if page.title %}{{ page.title | strip_html }}{% else %}<br/>{% endif %}</h1>
           {% if page.subtitle %}
             <span class="page-subheading">{{ page.subtitle | strip_html }}</span>
           {% endif %}

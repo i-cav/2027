@@ -164,6 +164,9 @@ const afterLoad = () => {
 };
 
 const beforeCache = () => {
+  // Rebuild Pagefind's generated markup and component registry on Turbo visits.
+  document.querySelector("pagefind-modal")?.replaceChildren();
+  window.PagefindComponents?.getInstanceManager().removeInstance("default");
   DeadlinePopovers.beforeCache();
   BootstrapTooltips.beforeCache();
   BootstrapNavState.beforeCache();
