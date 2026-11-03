@@ -5,10 +5,45 @@
    ========================================================================== */
 
 .organizer-grid,
-.organizer-featured__list {
+.organizer-featured__list,
+.committee-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-7);
+}
+
+.committee-members {
+  margin-top: var(--space-7);
+}
+
+.committee-member-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--header-font);
+  font-size: var(--font-size-ui);
+  line-height: var(--line-base);
+}
+
+.committee-member-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: var(--space-4);
+  padding: var(--space-3) 0;
+  border-bottom: var(--border);
+}
+
+.committee-member-list li:last-child {
+  border-bottom: 0;
+}
+
+.committee-member-list__name {
+  font-weight: 700;
+}
+
+.committee-member-list__affiliation {
+  color: var(--text-soft);
+  overflow-wrap: break-word;
 }
 
 .keynote-grid {
@@ -48,6 +83,7 @@
   color: var(--muted);
 }
 
+.organizer-person__photo-credit,
 .keynote-speaker__photo-credit {
   @include ui-text(var(--font-size-xs), 400, var(--line-snug));
   display: block;

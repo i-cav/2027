@@ -79,7 +79,8 @@ cover-img: "/assets/img/kit-royal-tropical-institute.jpg"
     <nav class="quick-link-directory__group topic-organization" aria-labelledby="quick-links-organization">
       <h3 id="quick-links-organization">Organization</h3>
       <div class="quick-link-directory__links">
-        <a class="quick-link-directory__link" href="{{ '/organization/' | relative_url }}">Committee</a>
+        <a class="quick-link-directory__link" href="{{ '/organizing-committee/' | relative_url }}">Organizing Committee</a>
+        <a class="quick-link-directory__link" href="{{ '/program-committee/' | relative_url }}">Program Committee</a>
       </div>
     </nav>
   </div>

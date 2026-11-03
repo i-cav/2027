@@ -64,6 +64,7 @@ cover-img: "/assets/img/hero/zaanse-windmills.jpg"
     <ul class="page-related-links__list" role="list">
       <li class="page-related-links__item"><a href="{{ '/keynotes/' | relative_url }}">Keynotes</a></li>
       <li class="page-related-links__item"><a href="{{ '/accepted/' | relative_url }}">Accepted Papers</a></li>
+      <li class="page-related-links__item"><a href="{{ '/program-committee/' | relative_url }}">Program Committee</a></li>
     </ul>
   </nav>
 </section>

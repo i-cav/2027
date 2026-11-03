@@ -25,7 +25,9 @@ navbar-links:
     - Venue: "/venue/"
     - Amsterdam: "/amsterdam/"
     - Sponsors: "/sponsors/"
-  Organization: "/organization/"
+  Organization:
+    - Organizing Committee: "/organizing-committee/"
+    - Program Committee: "/program-committee/"
 
 title-on-all-pages: true
 edit_page_button: true

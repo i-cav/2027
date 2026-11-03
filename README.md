@@ -37,12 +37,16 @@ Search uses the generated index in `_site/pagefind/` and runs entirely in the br
 
 Conference metadata lives in `_data/conference.yml`.
 
-Organizer roles and chair links live in `_data/organizers.yml`; the organization page renders directly from that data.
+Organizer roles and chair links live in `_data/organizers.yml`; the organizing committee page renders directly from that data.
 
 Keynote speakers live in `_data/keynotes.yml`, shared by the homepage announcement and keynote page.
 The `teaser` fields contain the speakers' approved blurbs.
 
-Public conference pages live under `pages/` and use explicit permalinks so URLs such as `/cfp/`, `/organization/`, `/contact/`, and `/sponsors/` remain stable.
+Area chairs and the PC member roster live in `_data/program_committee.yml` and render on `/program-committee/`.
+PC members appear in a text list sorted by surname, with affiliations and supplied homepage links.
+PC chairs are reused from `_data/organizers.yml`.
+
+Public conference pages live under `pages/` and use explicit permalinks such as `/cfp/`, `/organizing-committee/`, `/program-committee/`, `/contact/`, and `/sponsors/`.
 
 The footer's page-specific update date comes from the latest Git commit that changed the page source. A `last_modified_at` value in a page's front matter can override the generated date when necessary.
 

@@ -29,7 +29,7 @@ cover-img: "/assets/img/hero/tulips.jpg"
 
 ## Workshop Proposals
 
-Proposals will be reviewed by the Workshop Chair, CAV 2027 Program Chairs, and members of the CAV Steering Committee; see the [organization page]({{ "/organization/" | relative_url }}) for the full list.
+Proposals will be reviewed by the Workshop Chair, CAV 2027 Program Chairs, and members of the CAV Steering Committee; see the [Organizing Committee page]({{ "/organizing-committee/" | relative_url }}) for the full list.
 
 Proposals must consist of the following two parts:
 
@@ -74,7 +74,7 @@ Relevant for this call are the following people:
 
 {% include organizer-grid.html roles=relevant_organizers featured_title="General Chairs" heading_level=4 %}
 
-See the [full organization]({{ "/organization/" | relative_url }}) for all CAV 2027 roles.
+See the [Organizing Committee]({{ "/organizing-committee/" | relative_url }}) for all CAV 2027 roles.
 
 ### In-Person Event
 

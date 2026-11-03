@@ -107,12 +107,18 @@
   }
 
   .organizer-grid,
-  .organizer-featured__list {
+  .organizer-featured__list,
+  .committee-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 767px) {
+  .committee-member-list li {
+    grid-template-columns: 1fr;
+    gap: var(--space-1);
+  }
+
   .keynote-grid {
     grid-template-columns: 1fr;
     gap: var(--space-7);

@@ -17,5 +17,8 @@
     {% if include.person.affiliation %}
       <span class="organizer-person__affiliation">{{ include.person.affiliation }}</span>
     {% endif %}
+    {% if include.person.photo_credit %}
+      <span class="organizer-person__photo-credit">Photo: &copy; {{ include.person.photo_credit }}</span>
+    {% endif %}
   </span>
 </li>
