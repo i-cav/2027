@@ -1,0 +1,185 @@
+# Event start dates are inclusive; end dates are exclusive.
+days:
+  - date: "2027-07-19"
+  - date: "2027-07-20"
+  - date: "2027-07-21"
+  - date: "2027-07-22"
+  - date: "2027-07-23"
+
+events:
+  - id: vmw
+    kind: workshop
+    title: Mentoring Workshop
+    acronym: VMW
+    start: "2027-07-20"
+    end: "2027-07-21"
+
+  - id: smt
+    kind: workshop
+    title: Workshop on Satisfiability Modulo Theories
+    acronym: SMT
+    start: "2027-07-19"
+    end: "2027-07-21"
+    organizers:
+      - Katalin Fazekas
+      - Hans-Jörg Schurr
+    url: https://smt-workshop.cs.uiowa.edu/2027/
+    description: >-
+      Satisfiability Modulo Theories (SMT) solving means combining decision procedures with propositional satisfiability solvers in novel ways to solve challenging problems from domains ranging from software verification to scheduling.
+      The SMT workshop brings together researchers and users of SMT tools and techniques to nurture this development.
+
+  - id: hyper
+    kind: workshop
+    title: "Workshop on Hyperproperties: Advances in Theory and Applications"
+    acronym: HYPER
+    start: "2027-07-19"
+    end: "2027-07-20"
+    organizers:
+      - Tzu-Han Hsu
+      - François Hublet
+      - Ege Sarac
+      - Clara Schneidewind
+    url: https://hyperworkshop27.cispa.io/
+    description: >-
+      Hyperproperties capture specifications that relate multiple system executions, with applications ranging from secure software and hardware to cyber-physical and learning-enabled systems.
+      HYPER 2027 brings together researchers from formal methods and its application domains to discuss recent advances and challenges in the specification, analysis, and application of hyperproperties.
+
+  - id: veriprop
+    kind: workshop
+    title: Workshop on Verification of Probabilistic Programs
+    acronym: VeriProP
+    start: "2027-07-20"
+    end: "2027-07-21"
+    organizers:
+      - Christoph Matheja
+      - Francesca Randone
+      - Fabian Zaiser
+    url: https://veriprop.github.io/2027/
+    description: >-
+      VeriProP 2027 brings together researchers interested in the tool-supported verification of probabilistic programs, models, and systems.
+      The workshop provides a forum for presenting ongoing and previously published research, with a particular focus on symbolic methods and compositional approaches.
+
+  - id: synt
+    kind: workshop
+    title: Workshop on Synthesis
+    acronym: SYNT
+    start: "2027-07-20"
+    end: "2027-07-21"
+    organizers:
+      - Anand Balakrishnan
+      - Bettina Könighofer
+      - Doron Peled
+
+  - id: acv
+    kind: workshop
+    title: Workshop on Abstract and Concrete Techniques in Verification
+    acronym: ACV
+    start: "2027-07-19"
+    end: "2027-07-20"
+    organizers:
+      - Ichiro Hasuo
+      - Bart Jacobs
+      - Sam Staton
+    url: https://acv-ws.github.io/2027/
+    description: >-
+      Formal verification's abstract (semantical) and concrete (algorithmic) research lines have been hard to bridge.
+      This workshop seeks to unify them through lattices and categories, toward formal verification for the AI era.
+
+  - id: fmaai
+    kind: workshop
+    title: Workshop on Formal Methods for Agentic AI
+    acronym: FMAAI
+    start: "2027-07-19"
+    end: "2027-07-20"
+    organizers:
+      - Bettina Könighofer
+      - Zvonomir Rakamaric
+      - Hazem Torfah
+    url: https://fmaai2027.github.io/
+    description: >-
+      FMAAI brings together researchers and practitioners from formal methods, AI, and industry to explore how formal specifications, verification, and runtime enforcement can make autonomous AI agents safe and trustworthy.
+      Topics include autoformalization of specifications and models, policy-based guardrails for agent actions, runtime verification and monitoring of agent behavior, inference of specifications from agent trajectories, and neurosymbolic approaches that combine LLMs with formal reasoning.
+
+  - id: poc
+    kind: workshop
+    title: Principles of Certification Workshop
+    acronym: POC
+    start: "2027-07-19"
+    end: "2027-07-20"
+    organizers:
+      - Emily Yu
+      - Djordje Zikelic
+    url: https://theory.liacs.nl/poc2027/
+    description: >-
+      The Principles of Certification Workshop provides a forum for the researchers and practitioners from different formal methods communities that work on certification of computing systems, including software and hardware verification, SAT and SMT solving, probabilistic system verification and verification of AI-enabled systems.
+      The goal of certification is not only to formally prove that a model satisfies a specification, but also to provide the user with a certificate, which serves as a witness of correct verification and thus enhances the trustworthiness of formal verification results and tools.
+
+  - id: vqc
+    kind: workshop
+    title: Workshop on Verification of Quantum Computing
+    acronym: VQC
+    start: "2027-07-19"
+    end: "2027-07-20"
+    organizers:
+      - Yu-Fang Chen
+      - Alfons Laarman
+      - Runzhou Tao
+    url: https://verifiedqc.github.io/2027/
+    description: >-
+      The Second Workshop on Verification of Quantum Computing (VQC 2027) brings together researchers in formal methods and quantum computing to advance the verification of quantum software and hardware.
+      For CAV researchers, the workshop offers an opportunity to bring their verification expertise to quantum computing, discover challenging new problems, and connect with potential collaborators.
+
+  - id: force
+    kind: workshop
+    title: Formal Reasoning for Compositional Systems Engineering
+    acronym: FORCE
+    start: "2027-07-20"
+    end: "2027-07-21"
+    organizers:
+      - Alessandro Cimatti
+      - Paula Herber
+      - Inigo Incer
+    url: https://ces.eecs.umich.edu/force/27/
+    description: >-
+      The goal of the FORCE workshop is to bring together scientists and industry to harness in complex systems engineering the wealth of theories and tools that have been developed for compositional co-design and formal reasoning about digital hardware and software systems.
+      We aim to explore theory, methodologies, and tools to formally prove properties of complex systems that require a multi-disciplinary approach, and study a variety of complex systems through the lens of formal methods.
+
+  - id: crest
+    kind: workshop
+    title: Workshop on Formal Reasoning about Causation, Responsibility, and Explanations in Science and Technology
+    acronym: CREST
+    start: "2027-07-20"
+    end: "2027-07-21"
+    organizers:
+      - Hadar Frenkel
+      - Caroline Lemke
+    url: https://crest2027.github.io/
+    description: >-
+      CREST is a forum for formal reasoning about causation, responsibility, and explanation in computing systems, covering topics from causal logics and actual causality to explainability, accountability, and fault ascription.
+      It brings together researchers from different communities to discuss recent results, tools, and applications.
+
+  - id: main-conference
+    kind: conference
+    title: Main Conference
+    start: "2027-07-21"
+    end: "2027-07-24"
+
+  - id: industry-day
+    kind: industry
+    title: Industry Day
+    start: "2027-07-21"
+    end: "2027-07-22"
+    description: >-
+      The CAV 2027 Industry Day will focus on formal verification in industrial settings, featuring case studies, a keynote speaker from industry, and opportunities for networking.
+
+  - id: reception
+    kind: social
+    title: Reception
+    start: "2027-07-20"
+    end: "2027-07-21"
+
+  - id: banquet
+    kind: social
+    title: Banquet
+    start: "2027-07-21"
+    end: "2027-07-22"

@@ -47,7 +47,7 @@
   {% if page.cover-img or page.title %}
   <div class="container-md">
     <div class="row">
-      <div class="col-12 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <div class="{% if page.wide %}col-12{% else %}col-12 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1{% endif %}">
         <div class="page-heading">
           <p class="page-heading__conference">{{ site.data.conference.name | escape }}</p>
           <h1 data-pagefind-meta="title">{% if page.title %}{{ page.title | strip_html }}{% else %}<br/>{% endif %}</h1>

@@ -11,7 +11,7 @@ layout: base
 
 <main id="main-content"{% unless page.search == false %} data-pagefind-body{% endunless %} class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}{% if page.topic %} topic-{{ page.topic }}{% endif %}{% if decorative_hero %} decorative-hero-main{% endif %}{% if page.url == '/' %} home-main{% endif %}">
   <div class="row">
-    <div class="{% if page.full-width %} col {% else %} col-12 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
+    <div class="{% if page.full-width or page.wide %} col-12 {% else %} col-12 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
       <div class="page-content-card">
         {{ content }}
       </div>

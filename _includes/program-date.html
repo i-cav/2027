@@ -1,0 +1,3 @@
+{%- assign last_day = include.event.end | date: '%s' | minus: 86400 -%}
+{%- assign last_date = last_day | date: '%Y-%m-%d' -%}
+<time datetime="{{ include.event.start }}">{{ include.event.start | date: '%A, %-d %B' }}</time>{% if include.event.start != last_date %} &ndash; <time datetime="{{ last_date }}">{{ last_day | date: '%A, %-d %B' }}</time>{% endif %}

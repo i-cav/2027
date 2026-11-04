@@ -7,6 +7,11 @@ share-description: Call for workshop proposals for CAV 2027 in Amsterdam.
 cover-img: "/assets/img/hero/tulips.jpg"
 ---
 
+<div class="callout">
+  <p><strong>The call for workshop proposals is closed.</strong>
+  See the <a href="{{ '/program/' | relative_url }}#workshops-heading">workshop program</a> for the accepted workshops.</p>
+</div>
+
 <dl class="intro-facts" aria-label="CAV 2027 workshop facts">
   <div>
     <dt><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Workshops</dt>
