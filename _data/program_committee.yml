@@ -32,6 +32,8 @@ area_chairs:
     affiliation: IIT Bombay, India
     url: https://www.cse.iitb.ac.in/~akshayss/
     photo: /assets/img/area-chairs/s-akshay.jpg
+  - name: Liana Hadarean
+    affiliation: Amazon Web Services
 
 # Imported from the supplied PC registration CSV on 29 October 2026.
 # Members are sorted by surname and displayed without portraits.
@@ -147,8 +149,6 @@ members:
   - name: "Arie Gurfinkel"
     affiliation: "University of Waterloo"
     url: "https://ece.uwaterloo.ca/~agurfink"
-  - name: "Liana Hadarean"
-    affiliation: "Amazon Web Services"
   - name: "Fei He"
     affiliation: "Tsinghua University"
     url: "https://feihe.github.io/"
