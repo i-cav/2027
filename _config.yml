@@ -56,7 +56,6 @@ exclude:
   - docs/
   - vendor/
   - assets/img/keynotes/dino-distefano.jpg
-  - assets/img/keynotes/marijn-heule.jpg
 
 plugins:
   - jekyll-sitemap
