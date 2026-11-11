@@ -1,0 +1,72 @@
+.supporter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr));
+  gap: var(--space-7);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.supporter-grid__item {
+  min-width: 0;
+}
+
+.supporter-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  height: 100%;
+  padding: var(--space-3) 0;
+  border-radius: var(--radius);
+  font-family: var(--header-font);
+  font-size: var(--font-size-ui);
+  font-weight: 700;
+  line-height: var(--line-snug);
+  text-align: center;
+  text-decoration: none;
+}
+
+.supporter-link:hover,
+.supporter-link:focus {
+  text-decoration: none;
+}
+
+.supporter-link:hover > span:not(.supporter-link__logo),
+.supporter-link:focus > span:not(.supporter-link__logo) {
+  text-decoration: underline;
+  text-underline-offset: var(--underline-offset);
+}
+
+.supporter-link__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 7rem;
+  margin-bottom: var(--space-3);
+}
+
+.supporter-link__image {
+  width: 12rem;
+  height: auto;
+  max-width: 100%;
+  max-height: 6rem;
+  object-fit: contain;
+}
+
+/* Balance compact marks and long wordmarks within the same logo space. */
+.supporter-link__image--aws {
+  width: 8.5rem;
+}
+
+.supporter-link__image--cpec {
+  width: 15rem;
+}
+
+.supporter-link__description {
+  max-width: 18rem;
+  color: var(--muted);
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+}

@@ -81,6 +81,7 @@ cover-img: "/assets/img/kit-royal-tropical-institute.jpg"
       <div class="quick-link-directory__links">
         <a class="quick-link-directory__link" href="{{ '/organizing-committee/' | relative_url }}">Organizing Committee</a>
         <a class="quick-link-directory__link" href="{{ '/program-committee/' | relative_url }}">Program Committee</a>
+        <a class="quick-link-directory__link" href="{{ '/sponsors/' | relative_url }}">Financial Support</a>
       </div>
     </nav>
   </div>

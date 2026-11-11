@@ -34,7 +34,8 @@ body > main {
   box-shadow: var(--shadow-soft);
 }
 
-.page-content-card > :first-child {
+.page-content-card > :first-child,
+.page-content-card > section:first-child > :first-child {
   margin-top: 0;
 }
 

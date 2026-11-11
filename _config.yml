@@ -24,10 +24,10 @@ navbar-links:
     - Hotels: "/hotels/"
     - Venue: "/venue/"
     - Amsterdam: "/amsterdam/"
-    - Sponsors: "/sponsors/"
   Organization:
     - Organizing Committee: "/organizing-committee/"
     - Program Committee: "/program-committee/"
+    - Financial Support: "/sponsors/"
 
 title-on-all-pages: true
 edit_page_button: true
