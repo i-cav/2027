@@ -1,0 +1,15 @@
+<ul class="supporter-grid{% if include.compact %} supporter-grid--compact{% endif %}">
+  {% for supporter in include.supporters %}
+  <li class="supporter-grid__item">
+    <a class="supporter-link" href="{{ supporter.url }}">
+      <span class="supporter-link__logo">
+        <img class="supporter-link__image{% if supporter.image_class %} {{ supporter.image_class }}{% endif %}" src="{{ supporter.image | relative_url }}" alt="{% if include.compact %}{{ supporter.name | escape }}{% endif %}" width="{{ supporter.width }}" height="{{ supporter.height }}" loading="lazy" decoding="async">
+      </span>
+      {% unless include.compact %}
+      <span>{{ supporter.name }}</span>
+      {% if supporter.description %}<span class="supporter-link__description">{{ supporter.description }}</span>{% endif %}
+      {% endunless %}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

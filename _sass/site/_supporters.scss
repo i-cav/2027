@@ -70,3 +70,51 @@
   font-size: var(--font-size-sm);
   font-weight: 400;
 }
+
+.home-supporters {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 1.25fr);
+  gap: var(--space-7);
+  margin-top: var(--space-9);
+  padding: var(--space-6) 0;
+  border-top: var(--border-strong);
+}
+
+.home-supporters > section {
+  min-width: 0;
+}
+
+.home-supporters h2 {
+  margin: 0 0 var(--space-4);
+  font-size: var(--font-size-h3);
+}
+
+.supporter-grid--compact {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 7rem), 1fr));
+  gap: var(--space-4);
+}
+
+.supporter-grid--compact .supporter-link__logo {
+  height: 6rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .home-supporters {
+    grid-template-columns: 1fr;
+  }
+
+  .supporter-grid--compact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .supporter-grid--compact .supporter-grid__item {
+    flex: 0 1 9rem;
+  }
+
+  .supporter-grid--compact .supporter-grid__item:only-child {
+    flex-basis: 15rem;
+  }
+}

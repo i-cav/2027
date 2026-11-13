@@ -87,6 +87,17 @@ cover-img: "/assets/img/kit-royal-tropical-institute.jpg"
   </div>
 </section>
 
+<div class="home-supporters">
+  <section aria-labelledby="sponsors-heading">
+    <h2 id="sponsors-heading">Sponsors</h2>
+    {% include supporter-grid.html supporters=site.data.supporters.sponsors compact=true %}
+  </section>
+  <section aria-labelledby="financial-support-heading">
+    <h2 id="financial-support-heading">Financial support</h2>
+    {% include supporter-grid.html supporters=site.data.supporters.financial_support compact=true %}
+  </section>
+</div>
+
 <nav class="previous-conferences" aria-label="Previous CAV conferences">
   <span>Previous editions:</span>
   <a href="https://conferences.i-cav.org/2026/">CAV 2026</a>

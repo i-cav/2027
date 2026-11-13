@@ -1,0 +1,28 @@
+sponsors:
+  - name: Amazon Web Services (AWS)
+    url: https://aws.amazon.com/
+    image: /assets/img/supporters/aws.svg
+    image_class: supporter-link__image--aws
+    width: 478
+    height: 296
+  - name: TNO
+    description: Netherlands Organisation for Applied Scientific Research
+    url: https://www.tno.nl/en/about-tno/
+    image: /assets/img/supporters/tno.svg
+    width: 1175
+    height: 400
+  - name: VERSEN
+    description: Dutch National Association for Software Engineering
+    url: https://www.versen.nl/
+    image: /assets/img/supporters/versen.svg
+    width: 1856
+    height: 539
+
+financial_support:
+  - name: CPEC
+    description: Center for Perspicuous Computing
+    url: https://www.perspicuous-computing.science/
+    image: /assets/img/supporters/cpec.png
+    image_class: supporter-link__image--cpec
+    width: 2918
+    height: 501
