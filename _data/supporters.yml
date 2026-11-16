@@ -5,6 +5,11 @@ sponsors:
     image_class: supporter-link__image--aws
     width: 478
     height: 296
+  - name: Datadog
+    url: https://www.datadoghq.com/
+    image: /assets/img/supporters/datadog.svg
+    width: 801
+    height: 801
   - name: TNO
     description: Netherlands Organisation for Applied Scientific Research
     url: https://www.tno.nl/en/about-tno/

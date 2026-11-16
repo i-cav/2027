@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Financial Support
-share-description: CAV 2027 is supported by Amazon Web Services (AWS), TNO, VERSEN, and the Center for Perspicuous Computing (CPEC).
+share-description: CAV 2027 is supported by Amazon Web Services (AWS), Datadog, TNO, VERSEN, and the Center for Perspicuous Computing (CPEC).
 permalink: /sponsors/
 topic: attend
 cover-img: "/assets/img/hero/gouda-wheels.jpg"
