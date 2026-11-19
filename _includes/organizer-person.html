@@ -17,6 +17,9 @@
     {% if include.person.affiliation %}
       <span class="organizer-person__affiliation">{{ include.person.affiliation }}</span>
     {% endif %}
+    {% if include.show_email and include.person.email %}
+      <a class="organizer-person__email" href="mailto:{{ include.person.email | escape }}">{{ include.person.email | escape }}</a>
+    {% endif %}
     {% if include.person.photo_credit %}
       <span class="organizer-person__photo-credit">Photo: &copy; {{ include.person.photo_credit }}</span>
     {% endif %}

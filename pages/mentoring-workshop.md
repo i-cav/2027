@@ -10,7 +10,8 @@ topic: program
 
 Workshop details will be announced here.
 
-## Workshop Chairs
+## Contact
 
-- Ravi Mangal ([ravi.mangal@colostate.edu](mailto:ravi.mangal@colostate.edu))
-- Mugund Raghothaman ([raghotha@usc.edu](mailto:raghotha@usc.edu))
+{% assign workshop_chairs = site.data.organizers.roles | where: 'title', 'Mentoring Workshop Chairs' %}
+
+{% include organizer-grid.html roles=workshop_chairs featured=true featured_title="Workshop Chairs" heading_level=3 show_email=true %}

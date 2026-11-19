@@ -6,7 +6,7 @@
     <h{{ organizer_heading_level }} class="organizer-role__title" id="organizer-featured-{{ forloop.index }}">{{ include.featured_title | default: role.title }}</h{{ organizer_heading_level }}>
     <ul class="organizer-list organizer-featured__list">
     {% for person in role.people %}
-      {% include organizer-person.html person=person loading="eager" %}
+      {% include organizer-person.html person=person loading="eager" show_email=include.show_email %}
     {% endfor %}
     </ul>
   </section>
@@ -20,7 +20,7 @@
     <h{{ organizer_heading_level }} class="organizer-role__title" id="{{ role.title | slugify }}">{{ role.title }}</h{{ organizer_heading_level }}>
     <ul class="organizer-list">
     {% for person in role.people %}
-      {% include organizer-person.html person=person %}
+      {% include organizer-person.html person=person show_email=include.show_email %}
     {% endfor %}
     </ul>
   </section>

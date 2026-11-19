@@ -172,6 +172,13 @@
   color: var(--muted);
 }
 
+.organizer-person__email {
+  @include ui-text(var(--font-size-sm), 400, var(--line-snug));
+  display: block;
+  margin-top: var(--space-1);
+  overflow-wrap: anywhere;
+}
+
 /* ==========================================================================
    Venue Page
    ========================================================================== */

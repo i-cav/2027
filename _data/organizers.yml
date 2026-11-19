@@ -130,8 +130,15 @@ roles:
         photo_source: https://pschroer.de/generated-images/profile-picture.webp
   - title: Mentoring Workshop Chairs
     people:
+      - name: Ravi Mangal
+        url: https://ravimangal.github.io/
+        affiliation: Colorado State University
+        email: ravi.mangal@colostate.edu
+        photo: /assets/img/organizers/ravi-mangal.png
+        photo_source: https://cnsdrake.natsci.colostate.edu/directory/photos/EAB7E12400205F524916755D266DD367.png
       - name: Mukund Raghothaman
         url: https://r-mukund.github.io/
         affiliation: University of Southern California
+        email: raghotha@usc.edu
         photo: /assets/img/organizers/mukund-raghothaman.jpg
         photo_source: https://r-mukund.github.io/images/hs/m2018-57.jpg
