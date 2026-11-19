@@ -16,6 +16,7 @@ navbar-links:
   Program:
     - Overview: "/program/"
     - Keynotes: "/keynotes/"
+    - Mentoring Workshop: "/mentoring-workshop/"
     - Accepted Papers: "/accepted/"
     - Proceedings: "/proceedings/"
     - CAV Award: "/award/"

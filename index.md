@@ -63,6 +63,7 @@ cover-img: "/assets/img/kit-royal-tropical-institute.jpg"
       <div class="quick-link-directory__links">
         <a class="quick-link-directory__link" href="{{ '/program/' | relative_url }}">Program Overview</a>
         <a class="quick-link-directory__link" href="{{ '/keynotes/' | relative_url }}">Keynotes</a>
+        <a class="quick-link-directory__link" href="{{ '/mentoring-workshop/' | relative_url }}">Mentoring Workshop</a>
       </div>
     </nav>
 

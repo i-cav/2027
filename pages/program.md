@@ -29,8 +29,8 @@ cover-img: "/assets/img/hero/zaanse-windmills.jpg"
         {% if day.date >= event.start and day.date < event.end %}
         {% assign last_workshop_date = event.end | date: '%s' | minus: 86400 | date: '%Y-%m-%d' %}
         <li class="program-calendar__item">
-          <a class="program-calendar__event program-calendar__event--workshop{% if event.start != last_workshop_date %} program-calendar__event--multiday{% endif %}" href="{% if event.url %}{{ event.url | escape }}{% else %}#{{ event.id }}{% endif %}"{% unless event.url %} data-turbo="false"{% endunless %}>
-            <strong>{{ event.acronym | escape }}{% if event.url %} <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>{% endif %}</strong>
+          <a class="program-calendar__event program-calendar__event--workshop{% if event.start != last_workshop_date %} program-calendar__event--multiday{% endif %}" href="{% if event.url %}{{ event.url | relative_url | escape }}{% else %}#{{ event.id }}{% endif %}"{% unless event.url %} data-turbo="false"{% endunless %}>
+            <strong>{{ event.acronym | escape }}{% if event.url contains '://' %} <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>{% endif %}</strong>
             <span>{{ event.title | remove_first: 'Workshop on ' | remove_first: ' Workshop' | escape }}</span>
             {% if event.start != last_workshop_date %}<small>Also on {% if day.date == event.start %}{{ last_workshop_date | date: '%A' }}{% else %}{{ event.start | date: '%A' }}{% endif %}</small>{% endif %}
           </a>
@@ -70,7 +70,7 @@ cover-img: "/assets/img/hero/zaanse-windmills.jpg"
         <p class="workshop-detail__organizers"><strong>Organizers:</strong> {{ event.organizers | join: ', ' | escape }}</p>
         {% endif %}
         {% if event.url %}
-        <a class="button-link workshop-detail__website" href="{{ event.url | escape }}">{{ event.acronym | escape }} website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        <a class="button-link workshop-detail__website" href="{{ event.url | relative_url | escape }}">{{ event.acronym | escape }} website{% if event.url contains '://' %} <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>{% endif %}</a>
         {% else %}
         <p class="workshop-detail__note">Website to be announced.</p>
         {% endif %}
