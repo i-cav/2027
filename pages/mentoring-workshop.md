@@ -8,7 +8,7 @@ topic: program
 {% assign workshop = site.data.program.events | where: 'id', 'vmw' | first %}
 <p class="lead-copy">{% include program-date.html event=workshop %}</p>
 
-Workshop details will be announced here.
+<p>{{ workshop.description | escape }}</p>
 
 ## Contact
 

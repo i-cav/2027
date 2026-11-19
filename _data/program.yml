@@ -14,6 +14,9 @@ events:
     start: "2027-07-20"
     end: "2027-07-21"
     url: /mentoring-workshop/
+    description: >-
+      The purpose of the Verification Mentoring Workshop (VMW) is to provide mentoring and career advice to senior undergraduate and junior researchers at all stages, and to attract them to pursue research careers in the area of computer-aided verification.
+      The workshop will feature technical and mentoring talks and panel discussions, with the goal of welcoming interested students and junior researchers into the CAV community.
 
   - id: smt
     kind: workshop
