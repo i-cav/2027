@@ -55,7 +55,6 @@ exclude:
   - README.md
   - docs/
   - vendor/
-  - assets/img/keynotes/dino-distefano.jpg
 
 plugins:
   - jekyll-sitemap

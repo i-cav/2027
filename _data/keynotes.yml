@@ -11,6 +11,9 @@
   name: Dino Distefano
   affiliation: Anthropic & Queen Mary University of London
   url: https://ddino.github.io/
+  photo: /assets/img/keynotes/dino-distefano.jpg
+  teaser: >-
+    Using AI for verification at scale
 - id: marijn-heule
   name: Marijn Heule
   affiliation: Carnegie Mellon University
