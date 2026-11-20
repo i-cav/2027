@@ -36,5 +36,17 @@
       </a>
     </li>
   {% endif %}
+
+  {% if socials.linkedin %}
+    <li class="list-inline-item">
+      <a href="{{ socials.linkedin }}" rel="noreferrer" title="CAV Conferences on LinkedIn" aria-label="CAV Conferences on LinkedIn">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+        </span>
+        <span class="visually-hidden">CAV Conferences on LinkedIn</span>
+      </a>
+    </li>
+  {% endif %}
 </ul>
 {% endif %}

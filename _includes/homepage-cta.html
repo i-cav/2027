@@ -23,4 +23,16 @@
       </span>
     </span>
   </a>
+  {% assign linkedin_url = site.social-network-links.linkedin %}
+  {% if linkedin_url %}
+    <a class="homepage-cta__item" href="{{ linkedin_url }}" rel="noreferrer">
+      <span class="homepage-cta__icon" aria-hidden="true">
+        <i class="fab fa-linkedin-in"></i>
+      </span>
+      <span class="homepage-cta__content">
+        <span class="homepage-cta__title">Follow CAV on LinkedIn</span>
+        <span class="homepage-cta__note">News and announcements</span>
+      </span>
+    </a>
+  {% endif %}
 </section>

@@ -70,6 +70,7 @@
 
 @media (max-width: 900px) {
   .homepage-cta {
+    grid-auto-flow: row;
     grid-template-columns: minmax(0, 18rem);
   }
 
